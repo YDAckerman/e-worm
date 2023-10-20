@@ -1,0 +1,34 @@
+/* http://colrd.com/palette/23399/?download=css */
+
+:root {
+    --text-color: #f0dfaf;
+    --background-color: #3f3f3f;
+    --font: Helvetica, Arial, monospace;
+}
+
+h1 {
+  color: #f18c96;
+}
+ 
+h2 {
+  color: #ecbcbc;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+  color: #9fafaf;
+  background-color: #3f3f3f;
+}
+
+a:hover {
+   color: #ffcfaf;
+   background-color: #3f3f3f;
+}
+
+a:visited {
+   color: #709080;
+   background-color: #3f3f3f;
+}
