@@ -1,5 +1,7 @@
 => index.gmi back
 
+# BRO DON'T READ THIS YET ITS A WIP WIP WIP
+
 # Keyboard-Mind Rebind
 
 ## Keys are numerous, I vow to remap them.
@@ -30,5 +32,7 @@ This week I was given the opportunity to use one of these:
 
 => https://shop.keyboard.io/products/model-100 Keyboardio Model 100
 
-FREE OF CHARGE. I don't think window shopping high-end versions of your toys is an uncommon experience, so I'm assuming you get it. 
+FREE OF CHARGE. I don't think window shopping high-end versions of your toys is an uncommon experience, so I'm assuming you can relate (perhaps not you, MEK).
+
+
 
