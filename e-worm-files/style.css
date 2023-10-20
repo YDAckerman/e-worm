@@ -15,12 +15,9 @@ h2 {
 }
 
 a {
+    color: #9fafaf;
+    background-color: #3f3f3f;
     text-decoration: none;
-}
-
-a:link {
-  color: #9fafaf;
-  background-color: #3f3f3f;
 }
 
 a:hover {
