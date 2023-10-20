@@ -1,3 +1,5 @@
+=> index.gmi back
+
 # Keyboard Mind Rebind
 
 ## Keys are numerous, I vow to bind them.
