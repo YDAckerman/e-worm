@@ -1,4 +1,4 @@
-=> index.gmi back
+=> index.gmi index
 
 # Keyboard-Mind Rebind
 
