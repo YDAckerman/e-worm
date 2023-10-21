@@ -1,10 +1,8 @@
 => index.gmi back
 
-# BRO DON'T READ THIS YET ITS A WIP WIP WIP
-
 # Keyboard-Mind Rebind
 
-## Keys are numerous, I vow to remap them.
+## Introduction
 
 I am typing this one letter at a time bevause that is the best I van do. The C key still eludes me and my thumbs are vonfused and tired. I have a new keyboard, whivh is all I really should need to say but there is more.
 
@@ -12,21 +10,29 @@ Sinve approximately 2016 I have done most of my typing on a Mivrosoft Ergonomiv 
 
 Wait, stop. I know it would be so muvh more epiv if I wrote this whole thing on the new board, but I only have so muvh time in my day...
 
+## Me and My Little MEK
+
 OK, there.
 
-This little Microsoft Erognomic Keyboard has been great. I love it. It is sweet, flat, quiet and QWERTY. It is so delightfully vanilla. And it significantly eased the pains of all-day macbook keyboard hell. It has done me some serious solids and I am by no means discarding it. 
+This little Microsoft Erognomic Keyboard has been great. I love it. It is sweet, flat, quiet, and QWERTY. It is so delightfully vanilla. And it significantly eased the pains of all-day macbook keyboard hell. It has done me some serious solids and I really don't want it to take all this change personally.
 
-I want you to know, my little MEK, you're not going anywhere. And especially: this isn't about you, it's about me.
+I want you to know, my little MEK, you're not going anywhere. This isn't about you, it's about me.
 
 It is about me in this particular way:
 
-I want to BE ONE with the text on my screen. I want to dance with it. Move around it like birds on a tree. And through it like fish in a stream. I think I feel towards my keyboard (and my text editor) as a musician might toward their instrument. These text-editing devices let me make the music I can make. (I cringe at the teenage intensity of this analogy, but fuck it. NOW YOU KNOW.)
+I want to BE ONE with the text on my screen. I want to dance with it. Move around it like birds on a tree. And through it like fish in a stream. I think I feel towards my keyboard (and my text editor) as a musician might toward their instrument. These text-editing devices let me make the music I can make. (CRINGE. Sorry about the teenage intensity of these analogies! But fuck it. NOW YOU KNOW.)
 
-So for years I have been look at alternative devices. Some of the more recent ones:
+Thus, I have a weakness for DISRUPTIVE KEYBOARD TECHNOLOGY. Keyboards have been something I've SHOULD I???'d myself with at least a couple of times.
+
+## A Brief History of SHOULD I????
+
+For years I have been looking at alternative devices. Some of the more recent ones:
 
 => https://www.charachorder.com/products/charachorder-one the charachorder
 => https://www.zsa.io/moonlander/ the moonlander
 => https://kinesis-ergo.com/products/ kinesis etc
+
+## OPPORTUNITY
 
 This week I was given the opportunity to use one of these:
 
@@ -34,5 +40,27 @@ This week I was given the opportunity to use one of these:
 
 FREE OF CHARGE. I don't think window shopping high-end versions of your toys is an uncommon experience, so I'm assuming you can relate (perhaps not you, MEK).
 
+## Some Challenges
+
+Moving to a new keyboard, however, has never been easy for me. Even transitioning between layouts as similar as the macbook '13 and the MEK had challenges (really only minor differences in key spacing/placement/orientation, and text-editor considerations). Going from the MEK to the M100... metal. For me, metal. The following have been a few of the challenges:
+
+* By default, layouts on the M100 are layered, and various keys are used to lock or shift you into the layout with the specific key you're after. For example, if I want to type M-{, what had previously been a combination of pressing the meta key then shift and [, is now (in the default setup) the meta key, then shift, then a switch-key, and then { (a different key). This is especially challenging because the orientation of shift/switch/{ has to make sense ergonomically. I think I can work around this by defining a specific M100 macro, but I'm not there yet.
+
+* Thumbs. Currently, the control, meta, alt, super, backpace, and space keys are located in a row equivalent to what I would normally consder the space bar. I had never realized how luxurious it is to slide back and forth on the space bar and smash down wherever I want. This also requires ACTUAL THUMB COORDINATION. I don't think I've ever used my thumbs for anything other than SMASH. Ctrl, Meta, Super, and Alt all being thumb keys is especially challenging for me.
+
+* Key orientation. The M100 has a columnar QWERTY (alphanumeric) layout and a topographical curvature to the keys that enforce a specific finger-to-key configuration. I think the clearest example (other than cC) is P. I have always typed p with my right ring finger (let's use notation key[Hand][Finger]) and P via p[R][Middle] + shift[R][Pinky]. On the M100, I type p via p[R][Pinky] and P via p[R][Pinky] + shift[R][Thumb]. That is quite a few simultaneous changes for my brain to remap!
+
+## Practice, or: Keys are numerous, I vow to remap them.
+
+> “In the beginner’s mind there are many possibilities, but in the expert’s there are few” - Shunryu Suzuki
+
+I often have the opportunity to be a beginner. I think that interacting with TEXT ON A SCREEN is one of the few situations in which I FEEL LIKE AN EXPERT. This has been the first time I have willfully gone from being an expert in something to being, essentially, a totally beginner (1). I have this to report:
+
+* 'possibilities' often exist nestled subtly between one another. Possibilities are not discrete, they are not linear, and they are not low dimensional. Learning is mind bogglingly cool.
+
+* I don't know about you, but when I first heard the Suzuki Roshi quotation, I assumed there was some value judgement being made. The 'but', I thought, seemed to imply that having more possibilities was in some way better than having few. Now I am more inclined to read the quotation literally. There are just literally more possibilities in my mind when I am a beginner and there are literally fewer when I am an expert. For me, this realization pairs with the admonition to "go beyond picking and choosing" or whatever: not being caught in a cycle of preference and aversion. If I have only ever been a beginner in something, being a beginner is fun and no aversions are sparked! Once I have advanced, however, going backwards is much less fun. Frustration arises and I reach for the easy way of doing the thing. The process of thinning the possibilities is also, somehow, a process of closing off to possibility.
+
+# WIP
 
 
+1) note: I considered whether learning a new language is similar. I think it probably is, but for me there is, but it is a much less physical experience. Just fyi.
