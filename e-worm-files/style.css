@@ -1,31 +1,35 @@
 /* http://colrd.com/palette/23399/?download=css */
 
 :root {
-    --text-color: #f0dfaf;
-    --background-color: #3f3f3f;
+    --text-color: white;
+    --background-color: #2c292d;
     --font: Helvetica, Arial, monospace;
 }
 
 h1 {
-  color: #f18c96;
+  color: #ff6188;
 }
  
 h2 {
-  color: #ecbcbc;
+  color: #ab9df2;
+}
+
+h3 {
+    color: #fc9867
 }
 
 a {
-    color: #9fafaf;
-    background-color: #3f3f3f;
+    color: #78dce8;
+    background-color: #2c292d;
     text-decoration: none;
 }
 
 a:hover {
-   color: #ffcfaf;
-   background-color: #3f3f3f;
+   color: #ffd866;
+   background-color: #2c292d;
 }
 
 a:visited {
-   color: #709080;
-   background-color: #3f3f3f;
+   color: #a9dc76;
+   background-color: #2c292d;
 }
