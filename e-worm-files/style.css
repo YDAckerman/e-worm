@@ -1,10 +1,12 @@
 /* http://colrd.com/palette/23399/?download=css */
 
+/*
 @font-face {
     font-family: ibm;
     src: url('/home/yoni/e-worm/Px437_IBM_BIOS.ttf') format('truetype');
     src: url('/home/yoni/e-worm/Web437_IBM_BIOS.woff') format('woff');
 }
+*/
 
 :root {
     --text-color: white;
@@ -14,7 +16,7 @@
 
 h1 {
     color: #ff6188;
-    font-family: ibm;
+    font-family: monospace;
 }
  
 h2 {
