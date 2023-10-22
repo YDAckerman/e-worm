@@ -26,21 +26,11 @@ This week I was given the opportunity to use one of these:
 
 I was very, very excited. But a gift can also take away.
 
-Having something taken is also an opportunity. That makes two opportunities.
-
-## Difficulty
-
-The following have been a few of the challenges:
-
-* By default, layouts on the M100 are layered, and various keys are used to lock or shift you into the layout with the specific key you're after. For example, if I want to type M-{, what had previously been a combination of pressing the meta key then shift and [, is now (in the default setup) the meta key, then shift, then a switch-key, and then { (a different key). This is especially challenging because the orientation of shift/switch/{ has to make sense ergonomically. 
-
-* Thumbs. What are those? Currently, the control, meta, alt, super, backpace, and space keys are located in a row equivalent to what I would normally consder the space bar. I had never realized how luxurious it is to slide back and forth on the space bar and press down wherever I want. The M100 requires thumb movements beyond just up and down. I don't think I've ever used my thumbs for anything other than down. Ctrl, Meta, Super, and Alt all being thumb keys is exhilarating in terms of possibility and terrifying in terms of execution.
-
-* Key orientation. The M100 has a columnar QWERTY (alphanumeric) layout and a topographical curvature to the keys that enforce a specific finger-to-key configuration. I think the clearest example (other than cC) is P. I have always typed p with my right ring finger (let's use notation key[Hand][Finger]) and P via p[R][Middle] + shift[R][Pinky]. On the M100, I type p via p[R][Pinky] and P via p[R][Pinky] + shift[R][Thumb]. That is quite a few simultaneous changes for my brain to remap!
+Having something taken away can also be an opportunity. That makes two opportunities.
 
 ## Practice, or: Keys are numerous, I vow to remap them.
 
-When I interact with digital text I feel better than competent. I feel jazzy. This week I went from jazzy to beginner. I have this to report:
+When I interact with digital text I feel better than competent. I feel jazzy. This week I went from jazzy to beginner (see Difficulty below). I have this to report:
 
 * 'possibilities' often exist nestled subtly between one another. Possibilities are not discrete, they are not linear, and they are not low dimensional. Learning is mind bogglingly cool. I can't believe I can do it automatically.
 
@@ -55,5 +45,18 @@ When I interact with digital text I feel better than competent. I feel jazzy. Th
 * I credit the book Finite and Infinite Games, by J.P. Carse as one of the first things that got me interested in zen. We can all be the genius of ourselves, he writes (I paraphrase). I took this to mean, we all possess invaluable self knowledge that is inaccessible to anyone else. I like to think about being a beginner of myself, too. This makes sense in zen, where the self is big and small.
 
 * Remapping. I didn't just accept the M100 as is. I fiddled with it. I am finding what works, and there are many possibilities. When a key-stroke combination feels awkward, I go into the M100 user interface and change it. Such changes can cause cascading effects that can feel like taking backwards steps. Habits can form so quickly! I must re-map them!
+
+## Difficulty
+
+I saved this section for last, as Bri told me it is boring.
+
+The following have been a few of the challenges I've been experiencing :
+
+* By default, layouts on the M100 are layered, and various keys are used to lock or shift you into the layout with the specific key you're after. For example, if I want to type M-{, what had previously been a combination of pressing the meta key then shift and [, is now (in the default setup) the meta key, then shift, then a switch-key, and then { (a different key). This is especially challenging because the orientation of shift/switch/{ has to make sense ergonomically. 
+
+* Thumbs. What are those? Currently, the control, meta, alt, super, backpace, and space keys are located in a row equivalent to what I would normally consider the space bar. I had never realized how luxurious it is to slide back and forth on the space bar and press down wherever I want. The M100 requires thumb movements beyond just up and down. I don't think I've ever used my thumbs for anything other than down. Ctrl, Meta, Super, and Alt all being thumb keys is exhilarating in terms of possibility and terrifying in terms of execution.
+
+* Key orientation. The M100 has a columnar QWERTY (alphanumeric) layout and a topographical curvature to the keys that enforce a specific finger-to-key configuration. I think the clearest example (other than cC) is P. I have always typed p with my right ring finger (let's use notation key[Hand][Finger]) and P via p[R][Middle] + shift[R][Pinky]. On the M100, I type p via p[R][Pinky] and P via p[R][Pinky] + shift[R][Thumb]. That is quite a few simultaneous changes for my brain to remap!
+
 
 _()_
