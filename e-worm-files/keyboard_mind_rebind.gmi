@@ -1,6 +1,7 @@
 => index.gmi << index
 
 # Keyboard-Mind Rebind
+### 2023-10-22
 
 > “In the beginner’s mind there are many possibilities, but in the expert’s there are few” - Shunryu Suzuki
 
@@ -30,7 +31,7 @@ Having something taken away can also be an opportunity. That makes two opportuni
 
 ## Practice, or: Keys are numerous, I vow to remap them.
 
-When I interact with digital text I feel better than competent. I feel jazzy. This week I went from jazzy to beginner (see Difficulty below). I have this to report:
+When I interact with digital text I feel better than competent. I feel jazzy. This week I went from jazzy to beginner (see Difficulties below). I have this to report:
 
 * 'possibilities' often exist nestled subtly between one another. Possibilities are not discrete, they are not linear, and they are not low dimensional. Learning is mind bogglingly cool. I can't believe I can do it automatically.
 
@@ -46,11 +47,8 @@ When I interact with digital text I feel better than competent. I feel jazzy. Th
 
 * Remapping. I didn't just accept the M100 as is. I fiddled with it. I am finding what works, and there are many possibilities. When a key-stroke combination feels awkward, I go into the M100 user interface and change it. Such changes can cause cascading effects that can feel like taking backwards steps. Habits can form so quickly! I must re-map them!
 
-## Difficulty
-
-I saved this section for last, as Bri told me it is boring.
-
-The following have been a few of the challenges I've been experiencing :
+## Difficulties
+### (I saved this section for last, as Bri told me it is boring.)
 
 * By default, layouts on the M100 are layered, and various keys are used to lock or shift you into the layout with the specific key you're after. For example, if I want to type M-{, what had previously been a combination of pressing the meta key then shift and [, is now (in the default setup) the meta key, then shift, then a switch-key, and then { (a different key). This is especially challenging because the orientation of shift/switch/{ has to make sense ergonomically. 
 
