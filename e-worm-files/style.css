@@ -9,8 +9,10 @@
 :root {
     --text-color: white;
     --background-color: #2c292d;
-    --font: Helvetica, Arial, monospace;
+    --font: monospace;
 }
+
+/* Helvetica, Arial,  */
 
 h1 {
     color: #ff6188;
