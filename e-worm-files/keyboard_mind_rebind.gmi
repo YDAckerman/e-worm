@@ -57,4 +57,4 @@ When I interact with digital text I feel better than competent. I feel jazzy. Th
 * Key orientation. The M100 has a columnar QWERTY (alphanumeric) layout and a topographical curvature to the keys that enforce a specific finger-to-key configuration. I think the clearest example (other than cC) is P. I have always typed p with my right ring finger (let's use notation key[Hand][Finger]) and P via p[R][Middle] + shift[R][Pinky]. On the M100, I type p via p[R][Pinky] and P via p[R][Pinky] + shift[R][Thumb]. That is quite a few simultaneous changes for my brain to remap!
 
 
-_()_
+_()_ - Yoni
