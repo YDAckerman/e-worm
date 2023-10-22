@@ -9,7 +9,7 @@
 :root {
     --text-color: white;
     --background-color: #2c292d;
-    --font: monospace;
+    --font: ibm, monospace;
 }
 
 /* Helvetica, Arial,  */
