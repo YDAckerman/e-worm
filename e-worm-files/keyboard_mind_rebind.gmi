@@ -1,4 +1,4 @@
-=> index.gmi << index
+=> index.gmi < index
 
 # Keyboard-Mind Rebind
 ### 2023-10-22

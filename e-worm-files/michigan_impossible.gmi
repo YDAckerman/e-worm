@@ -1,4 +1,4 @@
-=> index.gmi << index
+=> index.gmi < index
 
 # Michigan Impossible
 
