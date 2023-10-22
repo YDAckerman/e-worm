@@ -7,8 +7,8 @@
 
 ## Sick Burns
 
-=> keyboard_mind_rebind.gmi Keyboard-Mind Rebind
+=> keyboard_mind_rebind.gmi > Keyboard-Mind Rebind
 
 ## Side Burns
 
-=> michigan_impossible.gmi Michigan Impossible
+=> michigan_impossible.gmi > Michigan Impossible
