@@ -9,6 +9,6 @@ Gedcrumb is the backend to a personal project that loads a gedcom file and repor
 
 The following links chronicle my technical progress in the Gedcrumb project.
 
-# I explore the rust-gedcom parser
-
 => gedcrumb_discovery.gmi > discovery
+
+### It should be noted that Ged Crumb is a great D&D name.
