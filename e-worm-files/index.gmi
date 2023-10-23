@@ -1,4 +1,4 @@
-=> https://andor.life < and/or
+=> https://andor.life/more < and/or
 => https://e-worm.club/ < e-worm
 
 ### _____________  My  ___________________
@@ -13,6 +13,12 @@
 
 => keyboard_mind_rebind.gmi > Keyboard-Mind Rebind
 
+## Sun Burns
+
+=> gedcrumb_chronicles.gmi > The Gedcrumb Chronicles
+
 ## Side Burns
 
 => michigan_impossible.gmi > Michigan Impossible
+
+

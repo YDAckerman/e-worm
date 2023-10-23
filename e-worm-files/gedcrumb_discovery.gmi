@@ -1,0 +1,134 @@
+=> gedcrumb_chronicles.gmi < gedcrumb chronicles
+
+# Discovery
+
+> "If you don't understand the Way right before you, how will you know the path as you walk?" -Sekito Kisen
+
+## Introduction
+
+I need a gedcom parser, but which one? I looked at parsers written in python, typescript, and rust. The python and typescript implementations worked. The rust implementation broke with the first sample gedcom I tried.
+
+I don't want to just do some statistics and make a pretty front end. Making the rust crate an opportunity to better understand what a parser actually is and potentially make a contribution to someone else's project. Here is a link to the rust gedcom parser
+
+=> https://github.com/pirtleshell/rust-gedcom rust-gedcom
+
+## Summary
+
+### TBD once I have a clearer understanding of the crate 
+
+## File Structure
+
+### src
+
+* bin.rs
+* lib.rs
+* parser.rs
+* tokenizer.rs
+* tree.rs
+* util.rs
+
+### src/types
+
+* address.rs
+* event.rs
+* family.rs
+* header.rs
+* individual.rs
+* mod.rs
+* source.rs
+* submitter.rs
+
+### tests
+
+* json_feature.rs
+* lib.rs
+
+### tests/fixtures
+
+* .ged files
+
+## bin.rs
+
+This file defines the cli binary interface for the program:
+
+* main - reads in data from the given file and parses it as a gedcom file.
+* usage - prints cli usage to stdout.
+* read_relative - takes a filepath and returns a Result<String> of the file data.
+* exit_with_error - reports an error message to stdout then exits the program.
+
+## lib.rs
+
+This file declares modules:
+
+* util
+* parser (pub)
+* tokenizer (pub)
+* types (pub)
+* tree
+
+types:
+
+* tree::GedcomData (pub)
+
+and defines a helper function:
+
+* parse - converts a file content stream to parsed data.
+
+## parser.rs
+
+This file defines the parser type. The parser struct contain a single field:
+
+* tokenizer
+
+and implements functionality:
+ 
+### new
+
+takes chars, a Chars type, and returns a new parser initilized from those chars. A Chars is an iterator over the chars of a string slice. So we pass this function a interator of chars and the Tokenizer type creates a new tokenizer from that iterator. The chars must have the same lifetime as the parser.
+
+### parse_record
+
+Operates mutably by reference on self and returns a GedcomData type.
+
+## tokenizer.rs
+
+This files defines the Tokenizer type and the Token type.
+
+It makes use of:
+
+=> https://edge.fscdn.org/assets/img/documents/ged551-5bac5e57fe88dd37df0e153d9c515335.pdf > gedcom standard 5.5.1
+
+Which boils down to (I'll have to go check though):
+
+> "gedcom_line: level + delim + [optional_xref_ID] + tag + [optional_line_value] + terminator"
+
+The token type is an enum defining the possible tokens and their associated types:
+
+* Level(u8) - denotes depth within the tree
+* Tag(String) - a four-character code that distinguishes datatypes
+* LineValue(String) - the value of the data
+* Pointer(String) - used to refer to a particular face (?)
+* CustomTag(String) - user defined tag (always starts with an underscored)
+* EOF - end-of-file indicator
+* None - initial token value
+
+The tokenizer type has fields:
+
+* current_token - a Token
+* current_char - a char
+* chars - a Chars iterator
+* line - a u32 of the current line
+
+Tokenizer implements:
+
+* new - takes a Chars and returns a new Tokenizer
+* done - ends tokenization, setting current_token to Token::EOF
+* next_token - loads the next token into the state
+* next_char - gets the next character from chars
+* extract_number - extracts a number from the chars iterator at the current state
+* extract_word - extracts a word from chars
+* extract_value - extracts a value from chars
+* skip_whitespace - moves the iterator past any whitespace chracters
+* is_nonnewline_whitespace - checks if the current chare is whitespace
+
+next_line, new, and done are the public functions. next_line checks for special characters (\0, \r, \n), skips whitespace, then sets the new current token based on the previous current token.

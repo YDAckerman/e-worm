@@ -1,0 +1,14 @@
+
+=> index.gmi < index
+
+# The Gedcrumb Chronicles
+
+> "Nirvana is seeing one thing through to the end" - Shuryu Suzuki
+
+Gedcrumb is the backend to a personal project that loads a gedcom file and reports statistical information, all from a browser-based interface. 
+
+The following links chronicle my technical progress in the Gedcrumb project.
+
+# I explore the rust-gedcom parser
+
+=> gedcrumb_discovery.gmi > discovery
