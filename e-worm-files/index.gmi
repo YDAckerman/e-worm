@@ -2,9 +2,9 @@
 => https://andor.life/more < and/or
 
 
-### _____________  My  ___________________
-## __________ Zen ____________
-# _______ Burns _______
+### _____________  My  ______________________________________
+## __________ Zen ________________________
+# _______ Burns ______________
 
 
 
@@ -13,13 +13,12 @@
 ## Sick Burns
 
 => keyboard_mind_rebind.gmi > Keyboard-Mind Rebind
-
-## Sun Burns
-
 => gedcrumb_chronicles.gmi > The Gedcrumb Chronicles
 
 ## Side Burns
 
 => michigan_impossible.gmi > Michigan Impossible
+
+## Sun Burns
 
 
