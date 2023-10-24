@@ -18,7 +18,7 @@ I don't want to just do some statistics and make a pretty front end. The rust cr
 
 ## File Structure
 
-### src
+### src/
 
 * bin.rs
 * lib.rs
@@ -27,7 +27,7 @@ I don't want to just do some statistics and make a pretty front end. The rust cr
 * tree.rs
 * util.rs
 
-### src/types
+### src/types/
 
 * address.rs
 * event.rs
@@ -38,12 +38,12 @@ I don't want to just do some statistics and make a pretty front end. The rust cr
 * source.rs
 * submitter.rs
 
-### tests
+### tests/
 
 * json_feature.rs
 * lib.rs
 
-### tests/fixtures
+### tests/fixtures/
 
 * .ged files
 
