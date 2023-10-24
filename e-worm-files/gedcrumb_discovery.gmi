@@ -8,7 +8,9 @@
 
 I need a gedcom parser, but which one? I looked at parsers written in python, typescript, and rust. The python and typescript implementations worked. The rust implementation broke with the first sample gedcom I tried.
 
-I don't want to just do some statistics and make a pretty front end. The rust crate is an opportunity to better understand what a parser actually is and potentially make a contribution to someone else's project. Here is a link to the rust gedcom parser
+I don't want to just do some statistics and make a pretty front end. The rust crate is an opportunity to better understand what a parser actually is and potentially make a contribution to someone else's project. Perhaps I'll need to fall back to the python/typescript versions, but I'll probably know more about the world when I do.
+
+Here is a link to the rust gedcom parser:
 
 => https://github.com/pirtleshell/rust-gedcom > rust-gedcom
 
