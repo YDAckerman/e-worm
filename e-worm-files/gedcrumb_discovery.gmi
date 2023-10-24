@@ -88,7 +88,7 @@ takes chars, a Chars type, and returns a new parser initilized from those chars.
 
 ### parse_record
 
-Operates mutably by reference on self and returns a GedcomData type.
+Operates mutably by reference on self and returns a GedcomData type. Creates a new GedcomData variable, then loops through the tokens of the tokenizer adding each correctly parsed token to the tree.
 
 ## tokenizer.rs
 
@@ -132,3 +132,6 @@ Tokenizer implements:
 * is_nonnewline_whitespace - checks if the current chare is whitespace
 
 next_line, new, and done are the public functions. next_line checks for special characters (\0, \r, \n), skips whitespace, then sets the new current token based on the previous current token.
+
+## tree.rs
+
