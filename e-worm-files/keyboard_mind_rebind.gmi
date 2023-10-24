@@ -48,7 +48,7 @@ When I interact with digital text I feel better than competent. I feel jazzy. Th
 * Remapping. I didn't just accept the M100 as is. I fiddled with it. I am finding what works, and there are many possibilities. When a key-stroke combination feels awkward, I go into the M100 user interface and change it. Such changes can cause cascading effects that can feel like taking backwards steps. Habits can form so quickly! I must re-map them!
 
 ## Difficulties
-### (I saved this section for last, as Bri told me it is boring.)
+### (I saved this section for last, as B told me it is boring.)
 
 * By default, layouts on the M100 are layered, and various keys are used to lock or shift you into the layout with the specific key you're after. For example, if I want to type M-{, what had previously been a combination of pressing the meta key then shift and [, is now (in the default setup) the meta key, then shift, then a switch-key, and then { (a different key). This is especially challenging because the orientation of shift/switch/{ has to make sense ergonomically. 
 
@@ -57,4 +57,4 @@ When I interact with digital text I feel better than competent. I feel jazzy. Th
 * Key orientation. The M100 has a columnar QWERTY (alphanumeric) layout and a topographical curvature to the keys that enforce a specific finger-to-key configuration. I think the clearest example (other than cC) is P. I have always typed p with my right ring finger (let's use notation key[Hand][Finger]) and P via p[R][Middle] + shift[R][Pinky]. On the M100, I type p via p[R][Pinky] and P via p[R][Pinky] + shift[R][Thumb]. That is quite a few simultaneous changes for my brain to remap!
 
 
-_()_ - Yoni
+### _()_ - Yoni
