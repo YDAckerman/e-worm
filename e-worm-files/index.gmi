@@ -19,6 +19,8 @@
 
 ## Sick Burns
 
+=> millenial.gmi > Millenial
+=> vanilla.gmi > Vanilla
+
 ## Side Burns
 
-=> michigan_impossible.gmi > Michigan Impossible
