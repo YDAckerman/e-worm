@@ -90,6 +90,8 @@ takes chars, a Chars type, and returns a new parser initilized from those chars.
 
 Operates mutably by reference on self and returns a GedcomData type. Creates a new GedcomData variable, then loops through the tokens of the tokenizer adding each correctly parsed token to the tree.
 
+At the start of each loop a pointer is created and is used when parsing Tag tokens. The parsing functions for each specific tag type are made public in tree.rs, but ultimately derive from src/types/. There is a 'TODO' comment in the custom tag case.
+
 ## tokenizer.rs
 
 This files defines the Tokenizer type and the Token type.
