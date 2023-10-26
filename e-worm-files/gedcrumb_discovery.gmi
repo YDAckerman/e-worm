@@ -1,4 +1,4 @@
-=> gedcrumb_chronicles.gmi < gedcrumb chronicles
+x=> gedcrumb_chronicles.gmi < gedcrumb chronicles
 
 # Discovery
 
@@ -15,6 +15,31 @@ Here is a link to the rust gedcom parser:
 => https://github.com/pirtleshell/rust-gedcom > rust-gedcom
 
 ## Summary
+
+The parser is made up of three pieces:
+
+* the tokenizer
+* the parser
+* the output (gedcom) data structure
+
+The tokenizer is responsible for taking a character stream, converting it into tokens and maintaining any meta information relevant to how the gedcom data is structured. For example, in the record:
+
+> 0 @I2644@ INDI
+> 1 NAME Henry C. /Marone/
+> 1 SEX M
+> 1 BIRT
+> 2 DATE        1895
+> 1 DEAT
+> 2 DATE        1968
+> 1 FAMS @F1250@
+
+Each number indicates which previous line it pertains to. 0 indicates a record identifier: the start of an individual, family, etc. The next three lines provide data about that individual, and are thus labelled 1. The fifth line is labelled 2 because it describes the previous line (it provides the date of the individual's birth). The tokenizer must track the row's number (level), and provide functionality for getting the next pointer (@I2644@), tag (INDI, NAME, SEX, etc), and value (Henry C. /Marone/, M, 1895, etc.). The last line (1 FAMS @F1250@) links Henry to his family using a pointer to that family's record (@F1240@).
+
+The parser creates a tokenizer from the given gedcom file; loops through the tokens identified by the tokenizer; and parses them into the desired output data structure.
+
+The data structure is an important part of the parser, because it determines a lot about how that data can be used going forward. For example, the currend GedcomData struct keeps a lot of important information in Vecs<>. This will be problematic going forward because if I want to, say, find an individual's parents, I'll need to loop through the Vec<Family> until I find the correct family, then extract the spouses of that family and loop through Vec<Individuals> to find them. One goal I have is to re-write this structure to maintain HashMaps<> of the data, so that I can search for family's and individuals in O(1) time. I hope I get a chance to connect with the crate's author so I can ask about their design choices!
+
+The following is informal technical documentation for the rust-gedcom crate. It is high-level. In general, I don't specify input/output types, lifetimes, etc.
 
 ### TBD once I have a clearer understanding of the crate 
 
@@ -92,7 +117,45 @@ takes chars, a Chars type, and returns a new parser initilized from those chars.
 
 Operates mutably by reference on self and returns a GedcomData type. Creates a new GedcomData variable, then loops through the tokens of the tokenizer adding each correctly parsed token to the tree.
 
-At the start of each loop a pointer is created and is used when parsing Tag tokens. The parsing functions for each specific tag type are made public in tree.rs, but ultimately derive from src/types/. There is a 'TODO' comment in the custom tag case.
+At the start of each loop a pointer is created and is used when parsing Tag tokens:
+
+### parse_header
+
+### parse_individual
+
+### parse_submitter
+
+### parse_family
+
+### parse_source
+
+### parse_repository
+
+### parse_custom_tags
+
+### parse_gedcom_data
+
+### parse_family_link
+
+### parse_repo_citation
+
+### parse_gender
+
+### parse_name
+
+### parse_event
+
+### parse_address
+
+### parse_citation
+
+The following are helper functions:
+
+### take_continued_text
+
+### take_line_value
+
+### dbg
 
 ## tokenizer.rs
 
