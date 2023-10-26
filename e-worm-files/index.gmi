@@ -2,9 +2,9 @@
 => https://andor.life/more < and/or
 
 
-### _____________  My  ______________________________________
-## __________ Zen ________________________
-# _______ Burns ______________
+### _____________  My  __________________________________________
+## __________ Zen _______________________________
+# _______ Burns ____________________
 
 
 
@@ -12,22 +12,14 @@
 
 ## Sun Burns
 
-Computer and tech -related:
-
 => keyboard_mind_rebind.gmi > Keyboard-Mind Rebind
 => gedcrumb_chronicles.gmi > The Gedcrumb Chronicles
 
 ## Rug Burns
 
-Sometimes something burns me at home:
-
 ## Sick Burns
-
-Things people have said to me that have made me reflect:
 
 => millenial.gmi > Millenial
 => vanilla.gmi > Vanilla
 
 ## Side Burns
-
-Everything else:
