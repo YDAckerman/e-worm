@@ -224,9 +224,7 @@ Contains a macro for dislaying Option<T>s in debug mode.
 
 a basic struct with Option<String> fields. It would be nice if there was a way to geolocate these.
 
-## src/types/family.rs
-
-
+## src/types/familbbby.rs
 
 ## Enhancements
 
