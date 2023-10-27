@@ -1,4 +1,4 @@
-x=> gedcrumb_chronicles.gmi < gedcrumb chronicles
+=> gedcrumb_chronicles.gmi < gedcrumb chronicles
 
 # Discovery
 
