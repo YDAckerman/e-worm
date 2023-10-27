@@ -74,7 +74,7 @@ The following is informal technical documentation for the rust-gedcom crate. It 
 
 * .ged files
 
-## bin.rs
+## src/bin.rs
 
 This file defines the cli binary interface for the program:
 
@@ -83,7 +83,7 @@ This file defines the cli binary interface for the program:
 * read_relative - takes a filepath and returns a Result<String> of the file data.
 * exit_with_error - reports an error message to stdout then exits the program.
 
-## lib.rs
+## src/lib.rs
 
 This file declares modules:
 
@@ -101,7 +101,7 @@ and defines a helper function:
 
 * parse - converts a file content stream to parsed data.
 
-## parser.rs
+## src/parser.rs
 
 This file defines the parser type. The parser struct contain a single field:
 
@@ -117,7 +117,7 @@ takes chars, a Chars type, and returns a new parser initilized from those chars.
 
 Operates mutably by reference on self and returns a GedcomData type. Creates a new GedcomData variable, then loops through the tokens of the tokenizer adding each correctly parsed token to the tree.
 
-At the start of each loop a pointer is created and is used when parsing Tag tokens:
+At the start of each loop a pointer is created and is used when parsing Tag tokens. The following are the primary functions for parsing:
 
 ### parse_header
 
@@ -130,6 +130,8 @@ At the start of each loop a pointer is created and is used when parsing Tag toke
 ### parse_source
 
 ### parse_repository
+
+The following are for processing secondary and tertiary tags:
 
 ### parse_custom_tags
 
@@ -157,7 +159,9 @@ The following are helper functions:
 
 ### dbg
 
-## tokenizer.rs
+There's a lot in these functions. I'll try going into depth with each one at a later date
+
+## src/tokenizer.rs
 
 This files defines the Tokenizer type and the Token type.
 
@@ -200,7 +204,7 @@ Tokenizer implements:
 
 next_line, new, and done are the public functions. next_line checks for special characters (\0, \r, \n), skips whitespace, then sets the new current token based on the previous current token.
 
-## tree.rs
+## src/tree.rs
 
 Tree uses the types defined in src/type to define the Gedcom type. This type has fields:
 
@@ -211,3 +215,22 @@ Tree uses the types defined in src/type to define the Gedcom type. This type has
 * repositories - a Vec of Repositor
 * sources - a Vec of Source
 * multimedia - a Vec of Media
+
+## src/util.rs
+
+Contains a macro for dislaying Option<T>s in debug mode.
+
+## src/types/address.rs
+
+a basic struct with Option<String> fields. It would be nice if there was a way to geolocate these.
+
+## src/types/family.rs
+
+
+
+## Enhancements
+
+* Parse values into useful types. Dates and Locations especially shouldn't be raw Option<String>s.
+
+* Change Individuals, Families, and GedcomData to maintain HashMap collections as fields instead of Vecs.
+
