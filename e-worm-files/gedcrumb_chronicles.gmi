@@ -3,7 +3,7 @@
 
 # The Gedcrumb Chronicles
 
-> "Nirvana is seeing one thing through to the end" - Shuryu Suzuki
+> "Nirvana is seeing one thing through to the end" - Shunryu Suzuki
 
 Gedcrumb is the backend to a personal project that loads a gedcom file and reports statistical information, all from a browser-based interface. 
 
@@ -11,4 +11,4 @@ The following links chronicle my technical progress in the Gedcrumb project.
 
 => gedcrumb_discovery.gmi > discovery
 
-### It should be noted that Ged Crumb is a great D&D name.
+### Note to self: Jed Crumb is a great D&D name.
