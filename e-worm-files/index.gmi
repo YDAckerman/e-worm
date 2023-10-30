@@ -22,6 +22,7 @@
 => millenial.gmi > Millenial
 => vanilla.gmi > Vanilla
 => stink.gmi > Stink
+=> third_eye.gmi > Third Eye
 
 ## Side Burns
 

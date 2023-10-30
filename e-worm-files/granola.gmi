@@ -2,11 +2,13 @@
 
 # Granola
 
+This is a granola recipe. It's pretty good, not too sweet, not too oily. If you are seeking clumps, look elsewhere. 
+
 ## Ingredients
 
 ### Dry
 * 3 lbs rolled oats
-* 2 cups shredded coconut
+* 2 cups shredded coconut (large-ish flakes are best)
 * 2 cup pumpkin seed
 * 2 cups sunflower seed
 * 1 cup chopped almonds
@@ -30,6 +32,6 @@
 * Mix wet and dry together. Coat as much of the dry with the wet as possible 
 * Bake for 30 min.
 * Remove from oven, mix, and then return to oven with tray locations swapped.
-* Check every 15 min for burning
+* Stir every 15 min to avoid burning.
 * Remove and let cool after about an hour (after it is crunchy and golden brown)
 * Let cool, then add dried fruit
