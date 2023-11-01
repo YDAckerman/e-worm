@@ -41,8 +41,6 @@ The data structure is an important part of the parser, because it determines a l
 
 The following is informal technical documentation for the rust-gedcom crate. It is high-level. In general, I don't specify input/output types, lifetimes, etc.
 
-### TBD once I have a clearer understanding of the crate 
-
 ## File Structure
 
 ### src/
@@ -159,7 +157,7 @@ The following are helper functions:
 
 ### dbg
 
-There's a lot in these functions. I'll try going into depth with each one at a later date
+There's a lot in the functions listed above. I'll try going into depth with each one at a later date.
 
 ## src/tokenizer.rs
 
@@ -222,9 +220,49 @@ Contains a macro for dislaying Option<T>s in debug mode.
 
 ## src/types/address.rs
 
-a basic struct with Option<String> fields. It would be nice if there was a way to geolocate these.
+a struct with Option<String> fields. It would be nice if there was a way to geolocate these.
 
-## src/types/familbbby.rs
+## src/types/family.rs
+
+The family type is a struct with the fields one would expect: reference id, individual 1 (husband), individual 2 (wife), children, etc. family events is currently a private field and I'm not sure why (figured that out, it's because there's an explicit getter method in the HasEvents trait). individual 1 and 2 are the author's choice to allow a wider variety of family structures. Could go further there and make it a HashMap called Spouses or something, but that could come with complications.
+
+Family implements methods: creating a new family, setting the spouses and adding children.
+
+Family implements traits: HasEvents. HasEvents allows adding events and returning a clone of the family's events. Why a clone I wonder? Probably just easier.
+
+## src/types/event.rs
+
+The EventType is an enum with categories for each type of gedcom event (Adoption, birth, marriage, etc.). The Event type is a struct with a field for EventType, date, place, and citations. The Event type implements methods for creating an event from a tag, adding/reporting citations, and converting and event to have EventType of SourceData(String).
+
+It doesn't look like there is functionality for adding times/places.
+
+Events defines a public trait called HasEvents. types implementing HasEvents must define a method to add an event and return its events. HasEvents then gives those types methods to return all dates and locations of its events.
+
+This is the first time I've seen traits (or anything like it... I guess interfaces are similar) in the wild, so I'm pretty stoked.
+
+## src/types/header.rs
+
+The header type is a struct which contains all 'metadata' (Encoding, copyright, corp, language, etc) of the file.
+
+## src/types/source.rs
+
+Two structs are defined here: Source and SourceData.
+
+SourceData contain events and agency, an optional string. I might be getting ahead of myself here, but it looks like add_event was mistakenly implemented in an implementation block for the SourceData type, instead of for the HasEvents trait. Enhancement!
+
+Source contains a SourceData, reference, abbreviation, title, and repo citations.
+
+Souce implements methods for creating a new source and adding a repo citation.
+
+## src/types/submitter.rs
+
+Defines a struct for Submitter containing a reference, name, address, and phone number. A submitter is a submitter of a genealogical fact, or so a comment tells me. Implements a method for creating a new submitter
+
+## src/types/individual.rs
+
+## src/types/mod.rs
+
+Brings the type modules into scope. Also defines a few structs (SourceCitation, RepoCitation, and CustomData). Apparently this is the older style of doing things. 
 
 ## Enhancements
 
@@ -232,3 +270,6 @@ a basic struct with Option<String> fields. It would be nice if there was a way t
 
 * Change Individuals, Families, and GedcomData to maintain HashMap collections as fields instead of Vecs.
 
+* implement HasEvents trait for: SourceData
+
+* Add title to src/types/individual/name
