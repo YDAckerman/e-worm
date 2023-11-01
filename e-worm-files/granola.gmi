@@ -1,0 +1,37 @@
+=> index.gmi < index
+
+# Granola
+
+This is a granola recipe. It's pretty good, not too sweet, not too oily. If you are seeking clumps, look elsewhere. 
+
+## Ingredients
+
+### Dry
+* 3 lbs rolled oats
+* 2 cups shredded coconut (large-ish flakes are best)
+* 2 cup pumpkin seed
+* 2 cups sunflower seed
+* 1 cup chopped almonds
+* 1 cup chopped walnuts
+* 1+ tbs cinnamon 
+
+### Wet
+* 1 cup sunflower or other oil
+* 1 cup maple syrup
+* 1 tbs vanilla
+
+### Post-Bake
+* 1 cup raisins
+* 1 cup cranberries 
+
+## Directions
+
+* Preheat oven to 325
+* Whisk together wet ingredients 
+* Mix together dry ingredients 
+* Mix wet and dry together. Coat as much of the dry with the wet as possible 
+* Bake for 30 min.
+* Remove from oven, mix, and then return to oven with tray locations swapped.
+* Stir every 15 min to avoid burning.
+* Remove and let cool after about an hour (after it is crunchy and golden brown)
+* Let cool, then add dried fruit
