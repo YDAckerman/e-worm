@@ -260,9 +260,32 @@ Defines a struct for Submitter containing a reference, name, address, and phone 
 
 ## src/types/individual.rs
 
+Individuals are slightly more complicated than the other types. The individual type is a struct with an option<xref> (reminder xref is a string), option<name>, sex: gender, Vec<FamilyLink>, Vec<CustomData>, last_updated: Option<String>, and Vec<Event>. So what is this family link? More later...
+
+Individual implements new, adding a family (actually adds a FamilyLink), and add_custom_data.
+
+Individual also implements trait HasEvents.
+
+There is an enum for gender (M, F, Nonbinary, Unknown).
+
+A Family link is a tuple struct of an xref, FamilyLinkType, and option<pedigree>.
+
+pedigree is an enum: adopted, birth, foster, sealing.
+
+FamilyLinkType is a enum: Spouse, Child.
+
+FamilyLink implements new from an Xref and a tag ('FAMC', 'FAMS'), and set_pedigree.
+
+Last, Name is a struct with a bunch of option elements. Could add title here. I'm not sure how to use it though. It derives some traits, so maybe the answer is there. Ya I see it. It has a Name::default() and then gets overwritten in the parser.
+
 ## src/types/mod.rs
 
 Brings the type modules into scope. Also defines a few structs (SourceCitation, RepoCitation, and CustomData). Apparently this is the older style of doing things. 
+
+## tests/json_feature.rs
+
+## tests/lib.rs
+
 
 ## Enhancements
 
