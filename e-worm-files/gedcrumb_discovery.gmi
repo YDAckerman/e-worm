@@ -284,7 +284,19 @@ Brings the type modules into scope. Also defines a few structs (SourceCitation, 
 
 ## tests/json_feature.rs
 
+Ok this is cool. If I look back a the Name type defined in src/types/individual, The line:
+
+> #[cfg_attr(feature = "json", derive(Serialize, Deserialize))]
+
+declares an optional build configuration. If the build includes the feature 'json' then the compiler derives the Serialize and Deserialize traits for Name. These are defined in the serde crate and allow serialization/deserialization of the name time to/from json.
+
+All the type declarations have this line, which means a gedcom tree can be serialized/deserialized to json.
+
+the json_feature.rs file runs tests to make sure that serialization to json works on the rust-gedcom types.
+
 ## tests/lib.rs
+
+
 
 
 ## Enhancements
