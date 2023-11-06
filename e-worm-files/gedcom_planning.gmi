@@ -1,0 +1,19 @@
+=> gedcrumb_chronicles.gmi < gedcrumb chronicles
+
+# Planning
+
+## Ideas
+
+### 2023-11-05
+
+First, I'm going to try to make the crate do what I need
+
+* add title to individual [X]
+* add COMM tag to parser token list and skip [ ]
+* Vec -> HashMap [ ]
+* Test valid tree structure [ ]
+* Test multi-tree structure [ ]
+
+Then, I can perhaps try to contribute in otherways
+
+* implement HasEvents trait for: SourceData [ ]

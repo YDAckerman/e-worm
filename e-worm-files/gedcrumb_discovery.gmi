@@ -296,8 +296,7 @@ the json_feature.rs file runs tests to make sure that serialization to json work
 
 ## tests/lib.rs
 
-
-
+this file holds a test of the parser on a simple gedcom file. HashMap implements Index (but not IndexMut) so accessing individuals and submitters via a data.individuals[0] might still work. There could probably be more tests here!
 
 ## Enhancements
 

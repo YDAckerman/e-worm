@@ -10,5 +10,6 @@ Gedcrumb is the backend to a personal project that loads a gedcom file and repor
 The following links chronicle my technical progress in the Gedcrumb project.
 
 => gedcrumb_discovery.gmi > discovery
+=> gedcrumb_planning.gmi > planning
 
 ### Note to self: Jed Crumb is a great D&D name.
