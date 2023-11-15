@@ -1,0 +1,121 @@
+=> index.gmi < index
+
+# Yarr Notes
+=> https://yetanotherrustresource.com/introduction yarr
+
+## 11/15
+
+- rust analyser is very cool. I like how it looks. feels cozy and I
+  feel less alone.
+
+- Makes me think I should train an llm. Make a weird cameo study-budy
+  for myself. 
+
+- basic cargo commands
+
+run your thing. compile your thing and run. 
+
+#+begin_src bash
+cargo run
+#+end_src
+
+- println!
+
+this is macro syntax bruh.
+
+here is src: 
+
+#+begin_src rust
+macro_rules! println {
+    () => { ... };
+    ($($arg:tt)*) => { ... };
+}
+#+end_src
+
+wut. this looks like a match statement. like, are those two cases?
+$arg is suggestive. * reminds me of a wild card. { ... } could mean anything.
+
+same syntax as format! but prints to stdout instead. 
+
+badd in hot loops! what is a hott loop?
+
+what is a hot loop???
+
+#+begin_src rust
+io::stdout().lock();
+#+end_src
+
+wut?? OH!!! COOL!:
+
+#+begin_src rust
+use std::io::{stdout, Write};
+
+let mut lock = stdout().lock();
+writeln!(lock, "hello world").unwrap();
+#+end_src
+
+BROOOOO. from std docks:
+
+" Access is also synchronized via a lock and explicit control over
+locking is available via the lock method."
+
+So a lock grants access. like, by definition, so. ok. The owner has
+the lock, no one else can access that resource.
+
+example? 
+
+#+begin_src rust
+use std::io::{self, Write};
+
+fn main() -> io::Result<()> {
+    let mut stdout = io::stdout().lock();
+
+    stdout.write_all(b"hello world")?;
+
+    Ok(())
+}
+#+end_src
+
+is it tho? I think it is just showing basic usage. not just a
+exemplary case. Because I could just write hello world without a
+lock... right? Maybe missign something
+
+- eprintln! is for errors and progress messages (goes to stderr, i assume?).
+
+### thot: encountering math makes me lose myself and try to become someone else. 
+
+- check out the extreme cases on each side of the (optimized) spectrum on leetcode.
+
+## variables! (not a macro)
+
+
+- let mut! (also not a macro)
+
+- mutability means exclusive access. LIKE LOCKS. FOR DOORS.
+
+### Type annotations
+
+- statically typed lengua: we've all got types at compile time. woo.
+- type inference - compiler can figure some stuff out. 
+- rust-analyzer tells you what types are inferred, which is SO
+  helpful. 
+
+### primative types. 
+
+- u8, u16, u32, u64, u128, usize. usize is a pointer-sized unsigned
+  integer. used to index into collections. good to knoooooo.
+- i8 ... i128, isize. isize is a pointer-sized signed integer. handy
+  for representing the difference between two indexes. ah! 
+- f32, f64. floating point ums. 1.2f32 or 1.2f64
+- char. 4 byes!
+- bool. hire me i know what a bool is!
+- str. utf-8 encoded string slice. &str. utf-8 makes accessing chars
+  at different indices more complicated.
+- (). r/absoluteunit
+
+### tuples arrays
+- tuple (u8, bool)
+- arrays. fixed size. [u8; 5]
+
+## Casting
+
