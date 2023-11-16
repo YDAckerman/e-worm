@@ -10,8 +10,7 @@ Why am I doing this??
 > "Because a buddha is in birth and death, there is no birth and death... Because a buddha is not in birth and death, a buddha is not deluded by birth and death" - Eihei Dogen
 
 # BC FKIN YAAAAAAARRRRRRRRRRR!!!!!
-
-## 11/15
+## The test begins now now now now now now
 
 - rust analyser is very cool. I like how it looks. feels cozy and friendly.
 
@@ -233,8 +232,7 @@ for &menu_item in menu.iter() {
 
 ## Lifetimes
 
-> "These are still things that disintegrate. What is the
-indestructible nature?" - some monk to Joshu
+> "These are still things that disintegrate. What is the indestructible nature?" - some monk to Joshu
 
 
 - "Every reference is a borrow, and each borrow has a lifetime. That
