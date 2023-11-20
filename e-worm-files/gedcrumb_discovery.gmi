@@ -260,9 +260,43 @@ Defines a struct for Submitter containing a reference, name, address, and phone 
 
 ## src/types/individual.rs
 
+Individuals are slightly more complicated than the other types. The individual type is a struct with an option<xref> (reminder xref is a string), option<name>, sex: gender, Vec<FamilyLink>, Vec<CustomData>, last_updated: Option<String>, and Vec<Event>. So what is this family link? More later...
+
+Individual implements new, adding a family (actually adds a FamilyLink), and add_custom_data.
+
+Individual also implements trait HasEvents.
+
+There is an enum for gender (M, F, Nonbinary, Unknown).
+
+A Family link is a tuple struct of an xref, FamilyLinkType, and option<pedigree>.
+
+pedigree is an enum: adopted, birth, foster, sealing.
+
+FamilyLinkType is a enum: Spouse, Child.
+
+FamilyLink implements new from an Xref and a tag ('FAMC', 'FAMS'), and set_pedigree.
+
+Last, Name is a struct with a bunch of option elements. Could add title here. I'm not sure how to use it though. It derives some traits, so maybe the answer is there. Ya I see it. It has a Name::default() and then gets overwritten in the parser.
+
 ## src/types/mod.rs
 
 Brings the type modules into scope. Also defines a few structs (SourceCitation, RepoCitation, and CustomData). Apparently this is the older style of doing things. 
+
+## tests/json_feature.rs
+
+Ok this is cool. If I look back a the Name type defined in src/types/individual, The line:
+
+> #[cfg_attr(feature = "json", derive(Serialize, Deserialize))]
+
+declares an optional build configuration. If the build includes the feature 'json' then the compiler derives the Serialize and Deserialize traits for Name. These are defined in the serde crate and allow serialization/deserialization of the name time to/from json.
+
+All the type declarations have this line, which means a gedcom tree can be serialized/deserialized to json.
+
+the json_feature.rs file runs tests to make sure that serialization to json works on the rust-gedcom types.
+
+## tests/lib.rs
+
+this file holds a test of the parser on a simple gedcom file. HashMap implements Index (but not IndexMut) so accessing individuals and submitters via a data.individuals[0] might still work. There could probably be more tests here!
 
 ## Enhancements
 

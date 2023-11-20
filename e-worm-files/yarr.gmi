@@ -1,0 +1,296 @@
+=> index.gmi < index
+
+# Yarr Notes
+=> https://yetanotherrustresource.com/introduction yarr
+
+Why am I doing this??
+
+> "No one is going to hire you to write rust" - people > 0
+
+> "Because a buddha is in birth and death, there is no birth and death... Because a buddha is not in birth and death, a buddha is not deluded by birth and death" - Eihei Dogen
+
+# BC FKIN YAAAAAAARRRRRRRRRRR!!!!!
+## The test begins now now now now now now
+
+- rust analyser is very cool. I like how it looks. feels cozy and friendly.
+
+- Makes me think I should train an llm. Make a weird cameo study-budy
+  for myself. 
+
+- basic cargo commands
+
+run your thing. compile your thing and run. 
+
+#+begin_src bash
+cargo run
+#+end_src
+
+- println!
+
+this is macro syntax bruh.
+
+here is src: 
+
+#+begin_src rust
+macro_rules! println {
+    () => { ... };
+    ($($arg:tt)*) => { ... };
+}
+#+end_src
+
+wut. this looks like a match statement. like, are those two cases?
+$arg is suggestive. * reminds me of a wild card. { ... } could mean anything.
+
+same syntax as format! but prints to stdout instead. 
+
+badd in hot loops! what is a hott loop?
+
+what is a hot loop???
+
+what is a hot loop???
+
+what is a hot loop???
+
+#+begin_src rust
+io::stdout().lock();
+#+end_src
+
+wut?? OH!!! COOL!:
+
+#+begin_src rust
+use std::io::{stdout, Write};
+
+let mut lock = stdout().lock();
+writeln!(lock, "hello world").unwrap();
+#+end_src
+
+BROOOOO. from std docks:
+
+" Access is also synchronized via a lock and explicit control over
+locking is available via the lock method."
+
+So a lock grants access. like, by definition, so. ok. The owner has
+the lock, no one else can access that resource.
+
+example? 
+
+#+begin_src rust
+use std::io::{self, Write};
+
+fn main() -> io::Result<()> {
+    let mut stdout = io::stdout().lock();
+
+    stdout.write_all(b"hello world")?;
+
+    Ok(())
+}
+#+end_src
+
+is it tho? I think it is just showing basic usage. not an
+exemplary case. Because I could just write hello world without a
+lock... right? Maybe missing something
+
+- eprintln! is for errors and progress messages (goes to stderr, i assume?).
+
+### thot: encountering math makes me lose myself and become someone else. i.e. self-obliterating mathematics. 
+
+- check out the extreme cases on each side of the (optimized) spectrum on leetcode.
+
+## variables! (not a macro)
+
+
+- let mut! (also not a macro)
+
+- mutability means exclusive access. LIKE LOCKS. FOR DOORS.
+
+### Type annotations
+
+- statically typed lengua: we've all got types at compile time. woo.
+- type inference - compiler can figure some stuff out. 
+- rust-analyzer tells you what types are inferred, which is SO
+  helpful. 
+
+### primative types. 
+
+- u8, u16, u32, u64, u128, usize. usize is a pointer-sized unsigned
+  integer. used to index into collections. good to knoooooo.
+- i8 ... i128, isize. isize is a pointer-sized signed integer. handy
+  for representing the difference between two indexes. ah! 
+- f32, f64. floating point ums. 1.2f32 or 1.2f64
+- char. 4 byes!
+- bool. hire me i know what a bool is!
+- str. utf-8 encoded string slice. &str. utf-8 makes accessing chars
+  at different indices more complicated.
+- (). r/absoluteunit
+
+### tuples arrays
+- tuple (u8, bool)
+- arrays. fixed size. [u8; 5]
+
+## Casting
+
+
+- as <type>
+
+## Control Flow
+
+- 'blocks delimit a scope'
+- 'blocks return a value'
+- use blocks to release resources
+
+cool
+
+- if
+- loop, while, for
+
+## fun
+
+wow this resource was worth it just for introducing me to rust-analyzer. 
+
+## memeory management
+
+- stack! this is where you put plates. things on the stack only live as long as the function they are inside. 
+- heap! this is where you find needles in O(1). things can live hear until they are deallocated. this has to happen deliberately.
+
+- flavors: manual memory management, automatic memory management (garbage collection [java, go], reference counting [python, swift])
+
+- Rust does manual memory management via ownership. so neoclassical.
+
+### Refrences and poincares.
+
+- x is x, &x is a reference to x, *x dereferences the reference to the
+  underlying value.
+
+#+begin_src rust
+let x: u32 = 10;
+
+let ref_x: &u32 = &x;
+
+println!("x = {}", *ref_x);
+#+end_src
+
+Rust will usually dereference for you:
+
+#+begin_src rust
+println!("x = {}", ref_x);
+#+end_src
+
+- pointers are like references, but come with fewer guarantees. They
+  are JUST an address in memory. so you can do unsafe things with
+  them. Not really in the scope of yarr.
+
+### Heap Allocation
+
+- Box
+
+#+begin_src rust
+let x: Box<u32> = Box::new(42);
+let y = Box::<f64>::new(4.2);
+#+end_src
+
+- deref that box:
+
+#+begin_src rust
+let z = *x;
+#+end_src
+
+## Collections
+
+### Vecnas
+
+#+begin_src rust
+
+let mut menu: Vec<&str> = Vec::new();
+menu.push("meat");
+println!("looks like {:?}'s back on the menu, boys!", menu);
+
+let mut menu = vec!["meat"];
+
+menu.push("meat");
+menu.push("meat");
+menu.push("meat");
+
+for &menu_item in menu.iter() {
+    println!("looks like {}'s back on the menu, boys!", menu_item);
+}
+
+#+end_src
+
+### other
+
+- HashMap
+- BTreeMap
+- HashSet
+- BTreeSet
+
+## Ownership and lifetimes
+
+- ownership is used for tracking when memory is valid and when it is
+  dropped.
+- the lifetime of a variable is the time when references to it are
+  valid.
+
+## Lifetimes
+
+> "These are still things that disintegrate. What is the indestructible nature?" - some monk to Joshu
+
+
+- "Every reference is a borrow, and each borrow has a lifetime. That
+  lifetime spans from when the variable is created to when it is
+  destroyed."
+
+Which is to say, if you have a reference to something, you're
+borrowing it (mutably or immutably). you can borrow it only so long as
+that thing exists. And thus a borrow has a lifetime spanning the birth
+and death of the thing. 
+
+- the borrow checker makes sure every reference has a lifetime WHOLLY
+  contained in the borrowed value's lifetime. 
+
+#+begin_src rust
+fn example<'a>(x: &'a u32) {
+   let y: &'a u32 = &x;
+}
+#+end_src
+
+does this mean y is a reference to a reference?
+
+- generics: <'a>
+- 'static means "referred to data will live for the duration of the
+  program"
+
+constants:
+
+#+begin_src rust
+let msg: &'static str = "hello, wordl!";
+#+end_src
+
+- anywhere type annotation can go, an explicit lifetime can go too. 
+
+- lifetime elision. Compiler guesses based on rules.
+
+## Ownership
+
+- I think I misunderstood something before. Variables don't own
+  things. Scopes own things and scopes borrow things. That's helpful.
+
+- copy. Some types implement the copy trait. These types types get
+  copied instead of being moved, which means you can keep using it in
+  both 'places'. ie:
+
+#+begin_src rust
+let x: u32 = 10;
+println!("x is {x}");
+println!("x*2 is {}", x*2);
+#+end_src
+
+normally, println! would take ownership of x, meaning we couldn't
+reference x anymore after the completion of println!'s scope. But
+because x 'is Copy' here, we can keep using it because it is copied
+into the scope of println! instead of moved. Realizing this in vivo requires
+understanding the types and their respective traits as you pass them
+around.
+
+## Closures
+
+
