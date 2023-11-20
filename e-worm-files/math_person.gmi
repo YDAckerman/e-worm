@@ -1,1 +1,67 @@
-cb
+=> index.gmi < index
+
+# Math Person
+### 2023-11-02
+
+> "No gaining idea" - Shunryu Suzuki
+
+## Anxiety
+
+I live in (what I find to be) a strange state of paradox. I have an undergraduate degree in mathematics and a masters degree in statistics. And yet I have near-paralyzing math-performance anxiety. Any time I am asked to do a math problem in an assessment context my heart rate skyrockets and my mind goes blank. It is embarrassing and I don't like it! Like, wtf? I /should/ be good at this!
+
+And now here I am, in the midst of a job search for a swe position and, guess what: the technical interview process is exactly the kind of situation that makes me most anxious. Great. Love it.
+
+Of course, I knew this going in, but I'm now at the point where I really need to find a way to deal with this mind state. Last week I had a mock interview and was told:
+
+> "Given your background, they [interviewers] are going to find your performance disappointing"
+
+Or something like that. Whatever it was, it felt like [expletive] to hear. I KNOW I am [expletive] at these situations - what I'd like to know is how to get better. My mock-interviewer told me to do a hundred leetcode problems. I don't fault that answer, but given my particular anxieties, I think I need a little more hand holding.
+
+So I'll hold my own hand!
+
+## Why?
+
+For the past few years, whenever this issue has come up, it's always arisen with the questions 'why the [expletive] am I like this?' and 'why is this happening to me?'.
+
+As students of Zen, we are cautioned against 'why' questions. It isn't that questions like 'Why is this happening?' and 'Why am I like this?' are invalid, they just aren't a part of Zen practice. They have a hungry energy that is easy to get lost in. 
+
+
+Last week, in a mock technical interview 
+
+
+
+
+
+
+
+## Math
+
+
+
+I was immersed in a culture of mathematics from 2007-2011, 2013-2014, and again from 2017-2018.
+
+I have had so many opportunities to do math. I have done so many path problems. But now, at this moment, it has been quite a while and I am out of practice.
+
+To do mathematics. To be good at mathematics. To be intelligent. I find it interesting that these statements, somehow, connote one another. 
+
+On a few occasions I have been told to practice. That mathematics isn't just some innate power, but a muscle one can strengthen. It is odd, because that is the only frame of looking at mathemtics that doesn't leave me feeling anxious. if mathematics is a practice, then like Zen practice, I should have no gaining idea. Unfortunately, I found the culture of mathematics, at the time of my education, to not, really provide support for this interpretation. 
+
+When I first started doing mathematics, I loved it for its own sake. Calculus, abstract geometry, group theory, analysis, etc - the higher-ed subjects were so lovely. And in the beginning, I didn't really know about jobs, or competition (I attended fairly small, culturally quite supportive institutions... at first). I didn't have the words then, and sure I wanted to be a 'good' mathematician, but really, all I did was practice. I went to class and I solved problems. That was good enough for me. There was no, tangible end goal, certainly not one I was particularly worried about as a college sophomore.
+
+In graduate school, even in the last year or so of undergrad, things began to fray. It became clear that what people really valued was not a person's love and excitement for mathematics, but their ability, their dexterity and strength in solving problems. Now I needed to be good to be valuable. I cannot explain the ramifications of this subtle psychological shift, but they were significant.
+
+My one year in math grad school was a difficult time for me. It was a time of deep emotional rifts, both in the classroom and out. I don't know if I was simply not mature enough to handle it at the time, or if it was just the wrong time to be pursuing such an intense, intellectual discipline. I felt deeply hurt and deeply lost.
+
+
+
+
+
+## Person
+
+
+
+## Onward
+
+
+
+### _()_ - Yoni
