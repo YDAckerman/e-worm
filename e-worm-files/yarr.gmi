@@ -9,8 +9,7 @@ Why am I doing this??
 
 > "Because a buddha is in birth and death, there is no birth and death... Because a buddha is not in birth and death, a buddha is not deluded by birth and death" - Eihei Dogen
 
-# BC FKIN YAAAAAAARRRRRRRRRRR!!!!!
-## The test begins now now now now now now
+# Yarr!
 
 - rust analyser is very cool. I like how it looks. feels cozy and friendly.
 
@@ -292,5 +291,80 @@ understanding the types and their respective traits as you pass them
 around.
 
 ## Closures
+
+- these are essentially anonymous functions:
+
+#+begin_src rust
+let y: u32 = 10;
+let annotated = |x: u32| -> u32 { x + y };
+let inferred = |x| x + y;
+
+println!("annotated: {}", annotated(32));
+println!("inferred: {}", inferred(32));
+#+end_src
+
+- closures can reference values outside their scope. they can also
+  capture and use them. By, say, getting a value from outside the
+  scope, and incrementing it. But the closure must be mut if it
+  captures a mutable variable. It's capturing a mutable variable (the
+  variable becomes part of the closure) and  it, thus the closure is
+  changing.
+
+- functions can return closures:
+
+#+begin_src rust
+fn print_msg<'a>(msg: &'a str) -> impl Fn() + 'a {
+        let printer = move || {
+          println!("{msg}");
+        };
+        printer
+}
+
+fn make_counter() -> impl FnMut() {
+   let mut count = 0;
+   let increment = move || {
+       count += 1;
+       count
+   };
+   increment
+}
+#+end_src
+
+#+begin_src rust
+
+let adder = |a: u32, b: u32 | a + b;
+
+#+end_src
+
+
+## Structs
+
+- struct fields
+- struct impl blocks
+
+#+begin_src rust
+
+struct CrewMember {
+  name: String,
+  age: u32,
+  odors: Vec<String>,
+}
+
+impl CrewMember {
+
+  pub fn describe(&self) {
+
+  println!("{} is {} and smells like {:?}", self.name, self.age, self.odors)
+
+  }
+
+}
+
+
+#+end_src
+
+## Enums
+
+- good
 
 
