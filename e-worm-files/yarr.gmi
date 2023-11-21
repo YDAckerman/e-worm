@@ -1,7 +1,7 @@
 => index.gmi < index
 
 # Yarr Notes
-=> https://yetanotherrustresource.com/introduction yarr
+=> https://yetanotherrustresource.com/introduction > yarr
 
 Why am I doing this??
 

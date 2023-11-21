@@ -8,12 +8,17 @@
 
 First, I'm going to try to make the crate do what I need
 
-* add title to individual [X]
-* add COMM tag to parser token list and skip [X]
-* Vec -> HashMap [ ]
-* Test valid tree structure [ ]
-* Test multi-tree structure [ ]
+* [X] add title to individual
+* [X] add COMM tag to parser token list and skip
+* [X] add ParserError type
+* [X] convert panic! calls to Result<T, ParserError> and ? in parser
+* [ ] convert panic! calls to Result<T, ParserError> and ? in types
+* [ ] convert panic! calls to Result<T, ParserError> and ? in tokenizer
+* [ ] Vec -> HashMap
+  - this is necessary for tree traversal
+* [ ] Test valid tree structure
+* [ ] Test multi-tree structure
 
 Then, I can perhaps try to contribute in other ways
 
-* implement HasEvents trait for: SourceData [ ]
+* [ ] implement HasEvents trait for: SourceData
