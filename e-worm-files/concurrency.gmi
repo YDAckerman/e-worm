@@ -1,0 +1,62 @@
+=> index.gmi < index
+
+# Concurrency for me
+## Today
+
+=> https://www.geeksforgeeks.org/python-program-with-concurrency > source
+
+- thread-based concurrency
+  many tasks are 'woven' together, but use the same cpu and memory resources. Does this get the task done faster? Doesn't seem like it, because each task's sub-tasks have to wait their turn in the thread. So this must be for situations where you just really need the tasks to be handled at the same time. Maybe you know that the tasks are going to have 'down' time - maybe they are listening to events, or sending data somewhere? Idk. 
+
+- process-based concurrency
+  This is what I would normally think of as concurrency. Each task gets its own dedicated memory and cpu resources. I data science work I usually thought about how to vectorize problems and then process orthogonal pieces in parallel on 'cores'. That was always very exciting for me back then.
+  
+- coroutine-based concurrency
+  async stuff. Now this is still kind of vague to me. I only messed around with async calls when I was doing blockchain stuff. whenever I interacted with an external resources I needed to do so asyncronously. I my mind that meant 'because I don't exactly know how long this is going to take, I need to put it on the back burner, or take it out of the linear flow of the program. If I didn't, things would be weird. But never quite what I expected with that mental model. But it makes sense that you'd 'separate from linear flow' by engaging the cpu and memory differently.
+
+## concurrency and parallelism
+
+- concurrency refers to tasks that overlap in time, but aren't necessarily done literally concurrently. (?)
+
+- parallelism is literally running many processes at the same time, generally using multiple cores.
+
+## implementation in python
+
+- select approach
+- select library: threading, multiprocessing, asyncio.
+- create worker roles
+- create threads, processes, and tasks.
+- control syncronization. this means using locks/semaphores to prevent data corruption in shared resources. I.e. we have to start being careful about shared, mutable data.
+- wait for the job to finish.
+
+## examples
+
+### ex 1: thread-based
+
+use threading: create two functions that, respectively, print out 1..6 or 'g', 'e','e', 'k', ,'s with a one-second delay between elements.
+
+create two threads with threading.Thread(target=function1) and threading.Thread(target=function2).
+start the threads with thread1.start() etc. wait for them both to finish with thread1.join() etc.
+
+### ex2: process based
+
+import multiprocessing. define a function. and a domain for that function. create a pool with multiprocessing.Pool(). then map the function across the domain in parallel with pool.map(function, domain).
+
+### ex3: asyncio
+
+import asyncio. define some 'slow' function ex:
+
+async def greet(name):
+      await asyncio.sleep(1)
+      print(name)
+
+elsewhere, create another async function which peforms:
+
+await asyncio.gather(greet("Geeks"), greet("for"), greet("geeks"))
+
+call that function in (i.e.) if __name__ == "__main__" with:
+
+asyncio.create_task(main())
+
+
+

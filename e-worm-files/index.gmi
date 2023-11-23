@@ -12,9 +12,10 @@
 
 ## Sun Burns
 
-=> keyboard_mind_rebind.gmi > Keyboard-Mind
-=> gedcrumb_chronicles.gmi > The Gedcrumb Chronicles
+=> concurrency.gmi > Concurrency Notes
 => yarr.gmi > Yarr Notes
+=> gedcrumb_chronicles.gmi > The Gedcrumb Chronicles
+=> keyboard_mind_rebind.gmi > Keyboard-Mind
 
 ## Rug Burns
 
