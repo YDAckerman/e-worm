@@ -13,7 +13,7 @@
 ## Sun Burns
 
 => concurrency.gmi > Concurrency Notes
-=> yarr.gmi > Yarr Notes
+=> yarr.html > Yarr Notes
 => gedcrumb_chronicles.gmi > The Gedcrumb Chronicles
 => keyboard_mind_rebind.gmi > Keyboard-Mind
 

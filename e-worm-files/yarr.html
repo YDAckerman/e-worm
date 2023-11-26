@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-11-25 Sat 22:22 -->
+<!-- 2023-11-25 Sat 22:29 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -242,67 +242,12 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org5bd5324">1. Yarr Notes</a></li>
-<li><a href="#orgd182e21">2. Yarr!</a>
-<ul>
-<li><a href="#orgd1c3e2a">2.1. variables! (not a macro)</a>
-<ul>
-<li><a href="#org0acc806">2.1.1. Type annotations</a></li>
-<li><a href="#orgfabe31c">2.1.2. primative types.</a></li>
-<li><a href="#org7e50bc3">2.1.3. tuples arrays</a></li>
-</ul>
-</li>
-<li><a href="#org8ff47c9">2.2. Casting</a></li>
-<li><a href="#org077b32d">2.3. Control Flow</a></li>
-<li><a href="#orgae872b2">2.4. fun</a></li>
-<li><a href="#orgaf81be8">2.5. memeory management</a>
-<ul>
-<li><a href="#org5017e89">2.5.1. Refrences and poincares.</a></li>
-<li><a href="#orgdaf06f8">2.5.2. Heap Allocation</a></li>
-</ul>
-</li>
-<li><a href="#org145ab95">2.6. Collections</a>
-<ul>
-<li><a href="#org5abc604">2.6.1. Vecnas</a></li>
-<li><a href="#org26b5600">2.6.2. other</a></li>
-</ul>
-</li>
-<li><a href="#org1b3be7a">2.7. Ownership and lifetimes</a></li>
-<li><a href="#org46dee95">2.8. Lifetimes</a></li>
-<li><a href="#org642aef3">2.9. Ownership</a></li>
-<li><a href="#org87c2464">2.10. Closures</a></li>
-<li><a href="#orgc971c8b">2.11. Structs</a></li>
-<li><a href="#org5b0c1f5">2.12. Enums</a></li>
-<li><a href="#orgd17c83e">2.13. More control flow</a></li>
-<li><a href="#org5394027">2.14. Modules</a>
-<ul>
-<li><a href="#orgcdda5b3">2.14.1. using modules</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orgd4727fc">3. Testing</a>
-<ul>
-<li>
-<ul>
-<li><a href="#org9ac5764">3.0.1. integration tests</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
 <p>
 <a href="https://yoni.e-worm.club/">&lt; index</a>
 </p>
 
-<div id="outline-container-org5bd5324" class="outline-2">
-<h2 id="org5bd5324"><span class="section-number-2">1</span> Yarr Notes</h2>
+<div id="outline-container-orgefebd43" class="outline-2">
+<h2 id="orgefebd43"><span class="section-number-2">1</span> Yarr Notes</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 <a href="https://yetanotherrustresource.com/">&gt; yarr</a>
@@ -323,11 +268,15 @@ Why am I doing this??
 "Because a buddha is in birth and death, there is no birth and death&#x2026; Because a buddha is not in birth and death, a buddha is not deluded by birth and death" - Eihei Dogen
 </p>
 </blockquote>
+
+<p>
+I apologize for the many misspellings.
+</p>
 </div>
 </div>
 
-<div id="outline-container-orgd182e21" class="outline-2">
-<h2 id="orgd182e21"><span class="section-number-2">2</span> Yarr!</h2>
+<div id="outline-container-org002ca7d" class="outline-2">
+<h2 id="org002ca7d"><span class="section-number-2">2</span> Yarr!</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>rust analyser is very cool. I like how it looks. feels cozy and friendly.</li>
@@ -453,8 +402,8 @@ lock&#x2026; right? Maybe missing something
 </ul>
 </div>
 
-<div id="outline-container-orgd1c3e2a" class="outline-3">
-<h3 id="orgd1c3e2a"><span class="section-number-3">2.1</span> variables! (not a macro)</h3>
+<div id="outline-container-org1ec082e" class="outline-3">
+<h3 id="org1ec082e"><span class="section-number-3">2.1</span> variables! (not a macro)</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>let mut! (also not a macro)</li>
@@ -463,8 +412,8 @@ lock&#x2026; right? Maybe missing something
 </ul>
 </div>
 
-<div id="outline-container-org0acc806" class="outline-4">
-<h4 id="org0acc806"><span class="section-number-4">2.1.1</span> Type annotations</h4>
+<div id="outline-container-orgd3f66be" class="outline-4">
+<h4 id="orgd3f66be"><span class="section-number-4">2.1.1</span> Type annotations</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li>statically typed lengua: we've all got types at compile time. woo.</li>
@@ -475,8 +424,8 @@ helpful.</li>
 </div>
 </div>
 
-<div id="outline-container-orgfabe31c" class="outline-4">
-<h4 id="orgfabe31c"><span class="section-number-4">2.1.2</span> primative types.</h4>
+<div id="outline-container-org17ade95" class="outline-4">
+<h4 id="org17ade95"><span class="section-number-4">2.1.2</span> primative types.</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <ul class="org-ul">
 <li>u8, u16, u32, u64, u128, usize. usize is a pointer-sized unsigned
@@ -493,8 +442,8 @@ at different indices more complicated.</li>
 </div>
 </div>
 
-<div id="outline-container-org7e50bc3" class="outline-4">
-<h4 id="org7e50bc3"><span class="section-number-4">2.1.3</span> tuples arrays</h4>
+<div id="outline-container-org519222c" class="outline-4">
+<h4 id="org519222c"><span class="section-number-4">2.1.3</span> tuples arrays</h4>
 <div class="outline-text-4" id="text-2-1-3">
 <ul class="org-ul">
 <li>tuple (u8, bool)</li>
@@ -504,8 +453,8 @@ at different indices more complicated.</li>
 </div>
 </div>
 
-<div id="outline-container-org8ff47c9" class="outline-3">
-<h3 id="org8ff47c9"><span class="section-number-3">2.2</span> Casting</h3>
+<div id="outline-container-org2aa4dd9" class="outline-3">
+<h3 id="org2aa4dd9"><span class="section-number-3">2.2</span> Casting</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>as &lt;type&gt;</li>
@@ -513,8 +462,8 @@ at different indices more complicated.</li>
 </div>
 </div>
 
-<div id="outline-container-org077b32d" class="outline-3">
-<h3 id="org077b32d"><span class="section-number-3">2.3</span> Control Flow</h3>
+<div id="outline-container-org403f9ae" class="outline-3">
+<h3 id="org403f9ae"><span class="section-number-3">2.3</span> Control Flow</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>'blocks delimit a scope'</li>
@@ -533,8 +482,8 @@ cool
 </div>
 </div>
 
-<div id="outline-container-orgae872b2" class="outline-3">
-<h3 id="orgae872b2"><span class="section-number-3">2.4</span> fun</h3>
+<div id="outline-container-orgfdaa3cb" class="outline-3">
+<h3 id="orgfdaa3cb"><span class="section-number-3">2.4</span> fun</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 wow this resource was worth it just for introducing me to rust-analyzer. 
@@ -542,8 +491,8 @@ wow this resource was worth it just for introducing me to rust-analyzer.
 </div>
 </div>
 
-<div id="outline-container-orgaf81be8" class="outline-3">
-<h3 id="orgaf81be8"><span class="section-number-3">2.5</span> memeory management</h3>
+<div id="outline-container-orgcfcaa5b" class="outline-3">
+<h3 id="orgcfcaa5b"><span class="section-number-3">2.5</span> memory management</h3>
 <div class="outline-text-3" id="text-2-5">
 <ul class="org-ul">
 <li>stack! this is where you put plates. things on the stack only live as long as the function they are inside.</li>
@@ -555,8 +504,8 @@ wow this resource was worth it just for introducing me to rust-analyzer.
 </ul>
 </div>
 
-<div id="outline-container-org5017e89" class="outline-4">
-<h4 id="org5017e89"><span class="section-number-4">2.5.1</span> Refrences and poincares.</h4>
+<div id="outline-container-orgd870f8b" class="outline-4">
+<h4 id="orgd870f8b"><span class="section-number-4">2.5.1</span> References and poincares.</h4>
 <div class="outline-text-4" id="text-2-5-1">
 <ul class="org-ul">
 <li>x is x, &amp;x is a reference to x, *x dereferences the reference to the
@@ -589,8 +538,8 @@ them. Not really in the scope of yarr.</li>
 </div>
 </div>
 
-<div id="outline-container-orgdaf06f8" class="outline-4">
-<h4 id="orgdaf06f8"><span class="section-number-4">2.5.2</span> Heap Allocation</h4>
+<div id="outline-container-org823dbcd" class="outline-4">
+<h4 id="org823dbcd"><span class="section-number-4">2.5.2</span> Heap Allocation</h4>
 <div class="outline-text-4" id="text-2-5-2">
 <ul class="org-ul">
 <li>Box</li>
@@ -614,12 +563,12 @@ let y = Box::&lt;f64&gt;::new(4.2);
 </div>
 </div>
 
-<div id="outline-container-org145ab95" class="outline-3">
-<h3 id="org145ab95"><span class="section-number-3">2.6</span> Collections</h3>
+<div id="outline-container-org2e70ad9" class="outline-3">
+<h3 id="org2e70ad9"><span class="section-number-3">2.6</span> Collections</h3>
 <div class="outline-text-3" id="text-2-6">
 </div>
-<div id="outline-container-org5abc604" class="outline-4">
-<h4 id="org5abc604"><span class="section-number-4">2.6.1</span> Vecnas</h4>
+<div id="outline-container-orgba49a31" class="outline-4">
+<h4 id="orgba49a31"><span class="section-number-4">2.6.1</span> Vecnas</h4>
 <div class="outline-text-4" id="text-2-6-1">
 <div class="org-src-container">
 <pre class="src src-rust">
@@ -642,8 +591,8 @@ for &amp;menu_item in menu.iter() {
 </div>
 </div>
 
-<div id="outline-container-org26b5600" class="outline-4">
-<h4 id="org26b5600"><span class="section-number-4">2.6.2</span> other</h4>
+<div id="outline-container-orgce8ec92" class="outline-4">
+<h4 id="orgce8ec92"><span class="section-number-4">2.6.2</span> other</h4>
 <div class="outline-text-4" id="text-2-6-2">
 <ul class="org-ul">
 <li>HashMap</li>
@@ -655,8 +604,8 @@ for &amp;menu_item in menu.iter() {
 </div>
 </div>
 
-<div id="outline-container-org1b3be7a" class="outline-3">
-<h3 id="org1b3be7a"><span class="section-number-3">2.7</span> Ownership and lifetimes</h3>
+<div id="outline-container-org3a00f94" class="outline-3">
+<h3 id="org3a00f94"><span class="section-number-3">2.7</span> Ownership and lifetimes</h3>
 <div class="outline-text-3" id="text-2-7">
 <ul class="org-ul">
 <li>ownership is used for tracking when memory is valid and when it is
@@ -667,8 +616,8 @@ valid.</li>
 </div>
 </div>
 
-<div id="outline-container-org46dee95" class="outline-3">
-<h3 id="org46dee95"><span class="section-number-3">2.8</span> Lifetimes</h3>
+<div id="outline-container-orgb9442b1" class="outline-3">
+<h3 id="orgb9442b1"><span class="section-number-3">2.8</span> Lifetimes</h3>
 <div class="outline-text-3" id="text-2-8">
 <p>
 &gt; "These are still things that disintegrate. What is the indestructible nature?" - some monk to Joshu
@@ -727,8 +676,8 @@ constants:
 </div>
 </div>
 
-<div id="outline-container-org642aef3" class="outline-3">
-<h3 id="org642aef3"><span class="section-number-3">2.9</span> Ownership</h3>
+<div id="outline-container-org2805206" class="outline-3">
+<h3 id="org2805206"><span class="section-number-3">2.9</span> Ownership</h3>
 <div class="outline-text-3" id="text-2-9">
 <ul class="org-ul">
 <li>I think I misunderstood something before. Variables don't own
@@ -757,8 +706,8 @@ around.
 </div>
 </div>
 
-<div id="outline-container-org87c2464" class="outline-3">
-<h3 id="org87c2464"><span class="section-number-3">2.10</span> Closures</h3>
+<div id="outline-container-org2766e0b" class="outline-3">
+<h3 id="org2766e0b"><span class="section-number-3">2.10</span> Closures</h3>
 <div class="outline-text-3" id="text-2-10">
 <ul class="org-ul">
 <li>these are essentially anonymous functions:</li>
@@ -814,8 +763,8 @@ let adder = |a: u32, b: u32 | a + b;
 </div>
 
 
-<div id="outline-container-orgc971c8b" class="outline-3">
-<h3 id="orgc971c8b"><span class="section-number-3">2.11</span> Structs</h3>
+<div id="outline-container-org4df8cb7" class="outline-3">
+<h3 id="org4df8cb7"><span class="section-number-3">2.11</span> Structs</h3>
 <div class="outline-text-3" id="text-2-11">
 <ul class="org-ul">
 <li>struct fields</li>
@@ -846,8 +795,8 @@ impl CrewMember {
 </div>
 </div>
 
-<div id="outline-container-org5b0c1f5" class="outline-3">
-<h3 id="org5b0c1f5"><span class="section-number-3">2.12</span> Enums</h3>
+<div id="outline-container-org088f8f4" class="outline-3">
+<h3 id="org088f8f4"><span class="section-number-3">2.12</span> Enums</h3>
 <div class="outline-text-3" id="text-2-12">
 <ul class="org-ul">
 <li>good</li>
@@ -875,8 +824,8 @@ enum Result&lt;T, E&gt; {
 </div>
 </div>
 
-<div id="outline-container-orgd17c83e" class="outline-3">
-<h3 id="orgd17c83e"><span class="section-number-3">2.13</span> More control flow</h3>
+<div id="outline-container-orgd4a73bf" class="outline-3">
+<h3 id="orgd4a73bf"><span class="section-number-3">2.13</span> More control flow</h3>
 <div class="outline-text-3" id="text-2-13">
 <div class="org-src-container">
 <pre class="src src-rust">
@@ -900,8 +849,8 @@ while let Some(v) = iter.next() {
 </div>
 </div>
 
-<div id="outline-container-org5394027" class="outline-3">
-<h3 id="org5394027"><span class="section-number-3">2.14</span> Modules</h3>
+<div id="outline-container-org0c553c3" class="outline-3">
+<h3 id="org0c553c3"><span class="section-number-3">2.14</span> Modules</h3>
 <div class="outline-text-3" id="text-2-14">
 <ul class="org-ul">
 <li>in a block delimited by braces:</li>
@@ -926,8 +875,8 @@ pub mod math {
 </ul>
 </div>
 
-<div id="outline-container-orgcdda5b3" class="outline-4">
-<h4 id="orgcdda5b3"><span class="section-number-4">2.14.1</span> using modules</h4>
+<div id="outline-container-org09d2b09" class="outline-4">
+<h4 id="org09d2b09"><span class="section-number-4">2.14.1</span> using modules</h4>
 <div class="outline-text-4" id="text-2-14-1">
 <ul class="org-ul">
 <li>use!</li>
@@ -938,8 +887,8 @@ pub mod math {
 </div>
 </div>
 
-<div id="outline-container-orgd4727fc" class="outline-2">
-<h2 id="orgd4727fc"><span class="section-number-2">3</span> Testing</h2>
+<div id="outline-container-orgb5c099e" class="outline-2">
+<h2 id="orgb5c099e"><span class="section-number-2">3</span> Testing</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>create a child module called test.rs :</li>
@@ -960,7 +909,7 @@ mod tests {
        assert_eq!(plus(x, y), expected, "should add up correctly");
     }
 
-    // this fails
+    // this fails bc function params are i32 in the example.
     #[test]
     fn adds_big_numbers() {
        let x = 2_000_000_000;
@@ -974,8 +923,8 @@ mod tests {
 </div>
 </div>
 
-<div id="outline-container-org9ac5764" class="outline-4">
-<h4 id="org9ac5764"><span class="section-number-4">3.0.1</span> integration tests</h4>
+<div id="outline-container-org718a758" class="outline-4">
+<h4 id="org718a758"><span class="section-number-4">3.0.1</span> integration tests</h4>
 <div class="outline-text-4" id="text-3-0-1">
 <ul class="org-ul">
 <li>integration tests can only consume the public api of your
@@ -999,7 +948,7 @@ fn test_addition() {
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: yoni</p>
-<p class="date">Created: 2023-11-25 Sat 22:22</p>
+<p class="date">Created: 2023-11-25 Sat 22:29</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
