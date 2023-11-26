@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-11-25 Sat 22:22 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="yoni" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org5bd5324">1. Yarr Notes</a></li>
+<li><a href="#orgd182e21">2. Yarr!</a>
+<ul>
+<li><a href="#orgd1c3e2a">2.1. variables! (not a macro)</a>
+<ul>
+<li><a href="#org0acc806">2.1.1. Type annotations</a></li>
+<li><a href="#orgfabe31c">2.1.2. primative types.</a></li>
+<li><a href="#org7e50bc3">2.1.3. tuples arrays</a></li>
+</ul>
+</li>
+<li><a href="#org8ff47c9">2.2. Casting</a></li>
+<li><a href="#org077b32d">2.3. Control Flow</a></li>
+<li><a href="#orgae872b2">2.4. fun</a></li>
+<li><a href="#orgaf81be8">2.5. memeory management</a>
+<ul>
+<li><a href="#org5017e89">2.5.1. Refrences and poincares.</a></li>
+<li><a href="#orgdaf06f8">2.5.2. Heap Allocation</a></li>
+</ul>
+</li>
+<li><a href="#org145ab95">2.6. Collections</a>
+<ul>
+<li><a href="#org5abc604">2.6.1. Vecnas</a></li>
+<li><a href="#org26b5600">2.6.2. other</a></li>
+</ul>
+</li>
+<li><a href="#org1b3be7a">2.7. Ownership and lifetimes</a></li>
+<li><a href="#org46dee95">2.8. Lifetimes</a></li>
+<li><a href="#org642aef3">2.9. Ownership</a></li>
+<li><a href="#org87c2464">2.10. Closures</a></li>
+<li><a href="#orgc971c8b">2.11. Structs</a></li>
+<li><a href="#org5b0c1f5">2.12. Enums</a></li>
+<li><a href="#orgd17c83e">2.13. More control flow</a></li>
+<li><a href="#org5394027">2.14. Modules</a>
+<ul>
+<li><a href="#orgcdda5b3">2.14.1. using modules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgd4727fc">3. Testing</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org9ac5764">3.0.1. integration tests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+<a href="https://yoni.e-worm.club/">&lt; index</a>
+</p>
+
+<div id="outline-container-org5bd5324" class="outline-2">
+<h2 id="org5bd5324"><span class="section-number-2">1</span> Yarr Notes</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<a href="https://yetanotherrustresource.com/">&gt; yarr</a>
+</p>
+
+<p>
+Why am I doing this??
+</p>
+
+<blockquote>
+<p>
+"No one is going to hire you to write rust" - people &gt; 0
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+"Because a buddha is in birth and death, there is no birth and death&#x2026; Because a buddha is not in birth and death, a buddha is not deluded by birth and death" - Eihei Dogen
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgd182e21" class="outline-2">
+<h2 id="orgd182e21"><span class="section-number-2">2</span> Yarr!</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>rust analyser is very cool. I like how it looks. feels cozy and friendly.</li>
+
+<li>Makes me think I should train an llm. Make a weird cameo study-budy
+for myself.</li>
+
+<li>basic cargo commands</li>
+</ul>
+
+<p>
+run your thing. compile your thing and run. 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">cargo run
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>println!</li>
+</ul>
+
+<p>
+this is macro syntax bruh.
+</p>
+
+<p>
+here is src: 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-rust">macro_rules! println {
+    () =&gt; { ... };
+    ($($arg:tt)*) =&gt; { ... };
+}
+</pre>
+</div>
+
+<p>
+wut. this looks like a match statement. like, are those two cases?
+$arg is suggestive. * reminds me of a wild card. { &#x2026; } could mean anything.
+</p>
+
+<p>
+same syntax as format! but prints to stdout instead. 
+</p>
+
+<p>
+badd in hot loops! what is a hott loop?
+</p>
+
+<p>
+what is a hot loop???
+</p>
+
+<p>
+what is a hot loop???
+</p>
+
+<p>
+what is a hot loop???
+</p>
+
+<div class="org-src-container">
+<pre class="src src-rust">io::stdout().lock();
+</pre>
+</div>
+
+<p>
+wut?? OH!!! COOL!:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-rust">use std::io::{stdout, Write};
+
+let mut lock = stdout().lock();
+writeln!(lock, "hello world").unwrap();
+</pre>
+</div>
+
+<p>
+BROOOOO. from std docks:
+</p>
+
+<p>
+" Access is also synchronized via a lock and explicit control over
+locking is available via the lock method."
+</p>
+
+<p>
+So a lock grants access. like, by definition, so. ok. The owner has
+the lock, no one else can access that resource.
+</p>
+
+<p>
+example? 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-rust">use std::io::{self, Write};
+
+fn main() -&gt; io::Result&lt;()&gt; {
+    let mut stdout = io::stdout().lock();
+
+    stdout.write_all(b"hello world")?;
+
+    Ok(())
+}
+</pre>
+</div>
+
+<p>
+is it tho? I think it is just showing basic usage. not an
+exemplary case. Because I could just write hello world without a
+lock&#x2026; right? Maybe missing something
+</p>
+
+<ul class="org-ul">
+<li>eprintln! is for errors and progress messages (goes to stderr, i assume?).</li>
+
+<li>check out the extreme cases on each side of the (optimized) spectrum on leetcode.</li>
+</ul>
+</div>
+
+<div id="outline-container-orgd1c3e2a" class="outline-3">
+<h3 id="orgd1c3e2a"><span class="section-number-3">2.1</span> variables! (not a macro)</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>let mut! (also not a macro)</li>
+
+<li>mutability means exclusive access. LIKE LOCKS. FOR DOORS.</li>
+</ul>
+</div>
+
+<div id="outline-container-org0acc806" class="outline-4">
+<h4 id="org0acc806"><span class="section-number-4">2.1.1</span> Type annotations</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>statically typed lengua: we've all got types at compile time. woo.</li>
+<li>type inference - compiler can figure some stuff out.</li>
+<li>rust-analyzer tells you what types are inferred, which is SO
+helpful.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfabe31c" class="outline-4">
+<h4 id="orgfabe31c"><span class="section-number-4">2.1.2</span> primative types.</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>u8, u16, u32, u64, u128, usize. usize is a pointer-sized unsigned
+integer. used to index into collections. good to knoooooo.</li>
+<li>i8 &#x2026; i128, isize. isize is a pointer-sized signed integer. handy
+for representing the difference between two indexes. ah!</li>
+<li>f32, f64. floating point ums. 1.2f32 or 1.2f64</li>
+<li>char. 4 byes!</li>
+<li>bool. hire me i know what a bool is!</li>
+<li>str. utf-8 encoded string slice. &amp;str. utf-8 makes accessing chars
+at different indices more complicated.</li>
+<li>(). r/absoluteunit</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7e50bc3" class="outline-4">
+<h4 id="org7e50bc3"><span class="section-number-4">2.1.3</span> tuples arrays</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<ul class="org-ul">
+<li>tuple (u8, bool)</li>
+<li>arrays. fixed size. [u8; 5]</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8ff47c9" class="outline-3">
+<h3 id="org8ff47c9"><span class="section-number-3">2.2</span> Casting</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>as &lt;type&gt;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org077b32d" class="outline-3">
+<h3 id="org077b32d"><span class="section-number-3">2.3</span> Control Flow</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>'blocks delimit a scope'</li>
+<li>'blocks return a value'</li>
+<li>use blocks to release resources</li>
+</ul>
+
+<p>
+cool
+</p>
+
+<ul class="org-ul">
+<li>if</li>
+<li>loop, while, for</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgae872b2" class="outline-3">
+<h3 id="orgae872b2"><span class="section-number-3">2.4</span> fun</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+wow this resource was worth it just for introducing me to rust-analyzer. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaf81be8" class="outline-3">
+<h3 id="orgaf81be8"><span class="section-number-3">2.5</span> memeory management</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>stack! this is where you put plates. things on the stack only live as long as the function they are inside.</li>
+<li>heap! this is where you find needles in O(1). things can live hear until they are deallocated. this has to happen deliberately.</li>
+
+<li>flavors: manual memory management, automatic memory management (garbage collection [java, go], reference counting [python, swift])</li>
+
+<li>Rust does manual memory management via ownership. so neoclassical.</li>
+</ul>
+</div>
+
+<div id="outline-container-org5017e89" class="outline-4">
+<h4 id="org5017e89"><span class="section-number-4">2.5.1</span> Refrences and poincares.</h4>
+<div class="outline-text-4" id="text-2-5-1">
+<ul class="org-ul">
+<li>x is x, &amp;x is a reference to x, *x dereferences the reference to the
+underlying value.</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">let x: u32 = 10;
+
+let ref_x: &amp;u32 = &amp;x;
+
+println!("x = {}", *ref_x);
+</pre>
+</div>
+
+<p>
+Rust will usually dereference for you:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-rust">println!("x = {}", ref_x);
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>pointers are like references, but come with fewer guarantees. They
+are JUST an address in memory. so you can do unsafe things with
+them. Not really in the scope of yarr.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdaf06f8" class="outline-4">
+<h4 id="orgdaf06f8"><span class="section-number-4">2.5.2</span> Heap Allocation</h4>
+<div class="outline-text-4" id="text-2-5-2">
+<ul class="org-ul">
+<li>Box</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">let x: Box&lt;u32&gt; = Box::new(42);
+let y = Box::&lt;f64&gt;::new(4.2);
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>deref that box:</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">let z = *x;
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org145ab95" class="outline-3">
+<h3 id="org145ab95"><span class="section-number-3">2.6</span> Collections</h3>
+<div class="outline-text-3" id="text-2-6">
+</div>
+<div id="outline-container-org5abc604" class="outline-4">
+<h4 id="org5abc604"><span class="section-number-4">2.6.1</span> Vecnas</h4>
+<div class="outline-text-4" id="text-2-6-1">
+<div class="org-src-container">
+<pre class="src src-rust">
+let mut menu: Vec&lt;&amp;str&gt; = Vec::new();
+menu.push("meat");
+println!("looks like {:?}'s back on the menu, boys!", menu);
+
+let mut menu = vec!["meat"];
+
+menu.push("meat");
+menu.push("meat");
+menu.push("meat");
+
+for &amp;menu_item in menu.iter() {
+    println!("looks like {}'s back on the menu, boys!", menu_item);
+}
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org26b5600" class="outline-4">
+<h4 id="org26b5600"><span class="section-number-4">2.6.2</span> other</h4>
+<div class="outline-text-4" id="text-2-6-2">
+<ul class="org-ul">
+<li>HashMap</li>
+<li>BTreeMap</li>
+<li>HashSet</li>
+<li>BTreeSet</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1b3be7a" class="outline-3">
+<h3 id="org1b3be7a"><span class="section-number-3">2.7</span> Ownership and lifetimes</h3>
+<div class="outline-text-3" id="text-2-7">
+<ul class="org-ul">
+<li>ownership is used for tracking when memory is valid and when it is
+dropped.</li>
+<li>the lifetime of a variable is the time when references to it are
+valid.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org46dee95" class="outline-3">
+<h3 id="org46dee95"><span class="section-number-3">2.8</span> Lifetimes</h3>
+<div class="outline-text-3" id="text-2-8">
+<p>
+&gt; "These are still things that disintegrate. What is the indestructible nature?" - some monk to Joshu
+</p>
+
+
+<ul class="org-ul">
+<li>"Every reference is a borrow, and each borrow has a lifetime. That
+lifetime spans from when the variable is created to when it is
+destroyed."</li>
+</ul>
+
+<p>
+Which is to say, if you have a reference to something, you're
+borrowing it (mutably or immutably). you can borrow it only so long as
+that thing exists. And thus a borrow has a lifetime spanning the birth
+and death of the thing. 
+</p>
+
+<ul class="org-ul">
+<li>the borrow checker makes sure every reference has a lifetime WHOLLY
+contained in the borrowed value's lifetime.</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">fn example&lt;'a&gt;(x: &amp;'a u32) {
+   let y: &amp;'a u32 = &amp;x;
+}
+</pre>
+</div>
+
+<p>
+does this mean y is a reference to a reference?
+</p>
+
+<ul class="org-ul">
+<li>generics: &lt;'a&gt;</li>
+<li>'static means "referred to data will live for the duration of the
+program"</li>
+</ul>
+
+<p>
+constants:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-rust">let msg: &amp;'static str = "hello, wordl!";
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>anywhere type annotation can go, an explicit lifetime can go too.</li>
+
+<li>lifetime elision. Compiler guesses based on rules.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org642aef3" class="outline-3">
+<h3 id="org642aef3"><span class="section-number-3">2.9</span> Ownership</h3>
+<div class="outline-text-3" id="text-2-9">
+<ul class="org-ul">
+<li>I think I misunderstood something before. Variables don't own
+things. Scopes own things and scopes borrow things. That's helpful.</li>
+
+<li>copy. Some types implement the copy trait. These types types get
+copied instead of being moved, which means you can keep using it in
+both 'places'. ie:</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">let x: u32 = 10;
+println!("x is {x}");
+println!("x*2 is {}", x*2);
+</pre>
+</div>
+
+<p>
+normally, println! would take ownership of x, meaning we couldn't
+reference x anymore after the completion of println!'s scope. But
+because x 'is Copy' here, we can keep using it because it is copied
+into the scope of println! instead of moved. Realizing this in vivo requires
+understanding the types and their respective traits as you pass them
+around.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org87c2464" class="outline-3">
+<h3 id="org87c2464"><span class="section-number-3">2.10</span> Closures</h3>
+<div class="outline-text-3" id="text-2-10">
+<ul class="org-ul">
+<li>these are essentially anonymous functions:</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">let y: u32 = 10;
+let annotated = |x: u32| -&gt; u32 { x + y };
+let inferred = |x| x + y;
+
+println!("annotated: {}", annotated(32));
+println!("inferred: {}", inferred(32));
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>closures can reference values outside their scope. they can also
+capture and use them. By, say, getting a value from outside the
+scope, and incrementing it. But the closure must be mut if it
+captures a mutable variable. It's capturing a mutable variable (the
+variable becomes part of the closure) and  it, thus the closure is
+changing.</li>
+
+<li>functions can return closures:</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">fn print_msg&lt;'a&gt;(msg: &amp;'a str) -&gt; impl Fn() + 'a {
+        let printer = move || {
+          println!("{msg}");
+        };
+        printer
+}
+
+fn make_counter() -&gt; impl FnMut() {
+   let mut count = 0;
+   let increment = move || {
+       count += 1;
+       count
+   };
+   increment
+}
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-rust">
+let adder = |a: u32, b: u32 | a + b;
+
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgc971c8b" class="outline-3">
+<h3 id="orgc971c8b"><span class="section-number-3">2.11</span> Structs</h3>
+<div class="outline-text-3" id="text-2-11">
+<ul class="org-ul">
+<li>struct fields</li>
+<li>struct impl blocks</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">
+struct CrewMember {
+  name: String,
+  age: u32,
+  odors: Vec&lt;String&gt;,
+}
+
+impl CrewMember {
+
+  pub fn describe(&amp;self) {
+
+  println!("{} is {} and smells like {:?}", self.name, self.age, self.odors)
+
+  }
+
+}
+
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5b0c1f5" class="outline-3">
+<h3 id="org5b0c1f5"><span class="section-number-3">2.12</span> Enums</h3>
+<div class="outline-text-3" id="text-2-12">
+<ul class="org-ul">
+<li>good</li>
+<li>variants: field by position; fields by name; unit variant</li>
+<li>pattern matching</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">
+enum Weekdays {
+     Monday,
+     Tuesday,
+     Wednesday,
+     Thursday,
+     Friday,
+}
+
+enum Result&lt;T, E&gt; {
+     Ok(T),
+     Err(E)
+}
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd17c83e" class="outline-3">
+<h3 id="orgd17c83e"><span class="section-number-3">2.13</span> More control flow</h3>
+<div class="outline-text-3" id="text-2-13">
+<div class="org-src-container">
+<pre class="src src-rust">
+let value = Some(42);
+
+if let Some(inner) = value {
+   println!("inner was {inner}");
+} else {
+   println!("no inner");
+}
+
+let vals = vec![1,2,3];
+let mut iter = values.iter();
+
+while let Some(v) = iter.next() {
+   println!("v = {v}");
+}
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5394027" class="outline-3">
+<h3 id="org5394027"><span class="section-number-3">2.14</span> Modules</h3>
+<div class="outline-text-3" id="text-2-14">
+<ul class="org-ul">
+<li>in a block delimited by braces:</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">
+pub mod math {
+
+    pub fn add(x: u32, y: u32) -&gt; u32 {
+        x + y
+    }
+}
+
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>in a file at the level of main.rs with the name of the module (ie math.rs). must add pub mod math; to main.rs file.</li>
+
+<li>in a folder (ie math) with a mod.rs file containing the code.</li>
+</ul>
+</div>
+
+<div id="outline-container-orgcdda5b3" class="outline-4">
+<h4 id="orgcdda5b3"><span class="section-number-4">2.14.1</span> using modules</h4>
+<div class="outline-text-4" id="text-2-14-1">
+<ul class="org-ul">
+<li>use!</li>
+<li>use super::thing (parent module) or use crate::thing (from the root of the current crate)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd4727fc" class="outline-2">
+<h2 id="orgd4727fc"><span class="section-number-2">3</span> Testing</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>create a child module called test.rs :</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">// only compile if the test compile option is on
+#[cfg(test)]
+mod tests {
+
+    use super::*;
+
+    #[test]
+    fn adds_small_numbers() {
+       let x = 10;
+       let y = 20;
+       let expected = 30;
+       assert_eq!(plus(x, y), expected, "should add up correctly");
+    }
+
+    // this fails
+    #[test]
+    fn adds_big_numbers() {
+       let x = 2_000_000_000;
+       let y = 2_000_000_000;
+       assert!(plus(x, y ) &gt; 0, "result should be positive");
+    }
+
+}
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org9ac5764" class="outline-4">
+<h4 id="org9ac5764"><span class="section-number-4">3.0.1</span> integration tests</h4>
+<div class="outline-text-4" id="text-3-0-1">
+<ul class="org-ul">
+<li>integration tests can only consume the public api of your
+library. ex:</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-rust">
+use my_library::plus;
+
+#[test]
+fn test_addition() {
+   assert_eq!(plus(10, 20), 30);
+}
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: yoni</p>
+<p class="date">Created: 2023-11-25 Sat 22:22</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
