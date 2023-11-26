@@ -22,15 +22,22 @@ body {
 
 h1 {
     color: #ff6188;
-    font-family: monospace;
+    font-family: monospace, monospace;
 }
  
 h2 {
     color: #ab9df2;
+    font-family: monospace, monospace;
 }
 
 h3 {
     color: #fc9867;
+    font-family: monospace, monospace;
+}
+
+h4 {
+    color: #ff6188;
+    font-family: monospace, monospace;
 }
 
 a {
