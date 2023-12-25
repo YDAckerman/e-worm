@@ -1,56 +1,15 @@
 => index.gmi < index
 
-# Keyboard-Mind
-### 2023-10-22
-
-> “In the beginner’s mind there are many possibilities, but in the expert’s there are few” - Shunryu Suzuki
-
-## Introduction
-
-I enjoy typing and I am drawn to tools that let me feel closer to digital text. 
-
-So sometimes I look at keyboards that strike me as strange or interesting.
-
-## Some Keyboards
-
-Here are some of the keyboards I've looked at:
-
-=> https://www.charachorder.com/products/charachorder-one > the charachorder
-=> https://www.zsa.io/moonlander/ > the moonlander
-=> https://kinesis-ergo.com/products/ > kinesis etc
-
-## Opportunities
-
-This week I was given the opportunity to use one of these:
+# New Keyboard
 
 => https://shop.keyboard.io/products/model-100 > Keyboardio Model 100
 
-I was very, very excited. But would the old noggin be able to make the switch?
+# Experience
 
-## Keys Are Numerous
+I had written a whole thing about how changing to a new keyboard was really challenging, like starting to play a new musical instrument. I'm pretty impressed with how much I wrote when that was really all I had to say.
 
-When I interact with digital text I feel better than competent. I feel jazzy. This week I went from jazzy to beginner (see Difficulties below). I have this to report:
+At this point (2+ months later?) I'm fairly smooth on it. I still don't use it much in emacs, though. At some point I'll need to really commit to that... But right now I still can't bear writing code so slowly.
 
-* When I first heard the Suzuki Roshi quotation, I assumed there was some value judgement being made. The 'but' seemed to imply that having more possibilities was in some way better than having few. Now I am more inclined to read the quotation literally. There are just literally more possibilities in my mind when I am a beginner and there are literally fewer when I am an expert.
-
-* How do preference and aversion pair with being a beginner and an expert? Being an advanced typist, going backwards is hard. Frustration arises and I reach for the easy way of doing the thing. The process of becoming an expert is also, somehow, a process of closing off to possibility. My body and mind react viscerally: "but there's an easier way to do this!"
-
-* Doing something one way many times is a kind of expertise. Maybe I am not an exceptionally good typist, but I have done my thing enough that my thing feels jazzy. I am afraid that as I age, the repetitive patterns of my life will bind me to a constant state of frustration as my body's abilities begin to wane. This is the benefit of beginner's mind. Practice beginners mind so that when causes and conditions require you to be a beginner, you can be one with ease. Sounds like good.
-
-* Zazen includes a practice of taking away. I don't know what zazen is, so I say it includes this or that. I'm hedging my bets. Also, it is fun to think of something including the absence of something else.
-
-* I credit the book Finite and Infinite Games, by J.P. Carse as one of the first things that got me interested in zen. We can all be the genius of ourselves, he writes (I paraphrase). I took this to mean, we all possess invaluable self knowledge that is inaccessible to anyone else. I like to think about being a beginner of myself, too. This makes sense in zen, where the self is big and small.
-
-* Remapping. I didn't just accept the M100 as is. I fiddled with it. I am finding what works, and there are many possibilities. When a key-stroke combination feels awkward, I go into the M100 user interface and change it. Such changes can cause cascading effects that can feel like taking backwards steps. Habits can form so quickly! I must re-map them!
-
-## Difficulties
-### (I saved this section for last, as B told me it is boring.)
-
-* By default, layouts on the M100 are layered, and various keys are used to lock or shift you into the layout with the specific key you're after. For example, if I want to type M-{, what had previously been a combination of pressing the meta key then shift and [, is now (in the default setup) the meta key, then shift, then a switch-key, and then { (a different key). This is especially challenging because the orientation of shift/switch/{ has to make sense ergonomically. 
-
-* Thumbs. What are those? Currently, the control, meta, alt, super, backpace, and space keys are located in a row equivalent to what I would normally consider the space bar. I had never realized how luxurious it is to slide back and forth on the space bar and press down wherever I want. The M100 requires thumb movements beyond just up and down. I don't think I've ever used my thumbs for anything other than down. Ctrl, Meta, Super, and Alt all being thumb keys is exhilarating in terms of possibility and terrifying in terms of execution.
-
-* Key orientation. The M100 has a columnar QWERTY (alphanumeric) layout and a topographical curvature to the keys that enforce a specific finger-to-key configuration. I think the clearest example (other than cC) is P. I have always typed p with my right ring finger (let's use notation key[Hand][Finger]) and P via p[R][Middle] + shift[R][Pinky]. On the M100, I type p via p[R][Pinky] and P via p[R][Pinky] + shift[R][Thumb]. That is quite a few simultaneous changes for my brain to remap!
-
+I like it a lot. The keybindings took me a while to figure out (I rely heavily on modifier keys and use both thumbs to hit SPACE). But the increased comfort is worth it. My pinky and ring fingers are significantly happier.
 
 ### _()_ - Yoni
