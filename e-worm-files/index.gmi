@@ -15,7 +15,7 @@
 => concurrency.gmi > Concurrency Notes
 => yarr.html > Yarr Notes
 => gedcrumb_chronicles.gmi > The Gedcrumb Chronicles
-=> keyboard_mind_rebind.gmi > Keyboard-Mind
+=> keyboard.gmi > New Keyboard
 
 ## Rug Burns
 
