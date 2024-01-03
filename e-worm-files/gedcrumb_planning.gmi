@@ -12,13 +12,25 @@ First, I'm going to try to make the crate do what I need
 * [X] add COMM tag to parser token list and skip
 * [X] add ParserError type
 * [X] convert panic! calls to Result<T, ParserError> and ? in parser
-* [ ] convert panic! calls to Result<T, ParserError> and ? in types
-* [ ] convert panic! calls to Result<T, ParserError> and ? in tokenizer
-* [ ] Vec -> HashMap
+* [X] convert panic! calls to Result<T, ParserError> and ? in types
+* [X] convert panic! calls to Result<T, ParserError> and ? in tokenizer
+* [X] Vec -> HashMap
   - this is necessary for tree traversal
-* [ ] Test valid tree structure
-* [ ] Test multi-tree structure
+* [X] Test valid tree structure
+* [X] Test multi-tree structure
 
-Then, I can perhaps try to contribute in other ways
+Now I can do the 'analytics':
 
-* [ ] implement HasEvents trait for: SourceData
+(the thought just crossed my mind... maybe I'll do these in python. That way if I decide that maintaining the parser is too much, I can just swap it out for one written in python and I won't have to re-write anything.)
+
+* [ ] serialize individual data
+* [ ] first name prevalence
+* [ ] first name of partner vs parent
+* [ ] generation from 'start'
+* [ ] furthest back known female/male ancestor
+* [ ] marriage dates
+* [ ] location geocoding
+* [ ] age difference between partners
+* [ ] age at childbirth per family/person
+* [ ] date of first childbirth per family/person
+* [ ] #/sex of children per family/person
