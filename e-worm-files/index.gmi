@@ -1,31 +1,23 @@
 => https://e-worm.club/ < e-worm
-=> https://andor.life/more < and/or
 
-
-### _____________  My  __________________________________________
-## __________ Zen _______________________________
-# _______ Burns ____________________
-
-
+# ____________ INDEX _______________
 
 > "In this living world / the body I give up and burn / would be wretched / if I thought of myself as / anything but firewood" - Ryonen Genso
 
-## Sun Burns
+## Computer
 
 => concurrency.gmi > Concurrency Notes
 => yarr.html > Yarr Notes
 => gedcrumb_chronicles.gmi > The Gedcrumb Chronicles
 => keyboard.gmi > New Keyboard
 
-## Rug Burns
-
-## Sick Burns
+## Statements
 
 => millenial.gmi > Millenial
 => vanilla.gmi > Vanilla
 => stink.gmi > Stink
 => third_eye.gmi > Third Eye
 
-## Side Burns
+## Other
 
 => granola.gmi > Granola
