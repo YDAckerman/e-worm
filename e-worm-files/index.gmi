@@ -1,23 +1,58 @@
 => https://e-worm.club/ < e-worm
 
-# Index
+### Books
+## Books
+# Books
 
-> "In this living world / the body I give up and burn / would be wretched / if I thought of myself as / anything but firewood" - Ryonen Genso
+## Hild
+### Nicola Griffith
 
-## Computer
+An exceptional woman in seventh century Briton navigates political/social upheaval. Do you want to skinny dip with otters in the moonlight? Do you want to be low-key in love with your half-brother? Read Hild!
 
-=> concurrency.gmi > Concurrency Notes
-=> yarr.html > Yarr Notes
-=> gedcrumb_chronicles.gmi > The Gedcrumb Chronicles
-=> keyboard.gmi > New Keyboard
+## Circe
+### Madeleine Miller
 
-## Statements
+An immortal outcast sentenced to solitary confinement on an island. Time, loneliness, and shitty dudes. Heartbreaking and hopeful. 
 
-=> millenial.gmi > Millenial
-=> vanilla.gmi > Vanilla
-=> stink.gmi > Stink
-=> third_eye.gmi > Third Eye
+## A Song of Achilles
+### Madeleine Miller
 
-## Other
+So hott. Until the end; then very sad. But we sort of knew it was coming...
 
-=> granola.gmi > Granola
+## A Psalm for the Wild-Built
+### Becky Chambers
+
+A wandering monk searches for meaning. Finds a robot.
+
+## Tales of the Otori
+### Lian Hearn
+
+Horny shinobi teens. Kind of very sad, though.
+
+## Debt
+### David Graeber
+
+Read about the birth of Buddhism. Oh, and money.
+
+## The Dawn of Everything
+### David Graeber
+
+Want to imagine other ways of structuring a society? Me too!
+
+## Utopia of Rules
+### David Graeber
+
+Police, Vampires, and history's most beautiful postal service. 
+
+## Witches, Witch-Hunting, and Women
+### Silvia Federici
+
+Social/economic theory of violence against women. Deeply upsetting. Wish I hadn't read it alone...
+
+## Fancy Bear Goes Fishing
+### Scott J. Shapiro
+
+Young people (mostly men) break things, then get jobs at Google or the KGB. I sort of learned some stuff?
+
+
+

@@ -23,8 +23,8 @@ Now I can do the 'analytics':
 
 (the thought just crossed my mind... maybe I'll do these in python. That way if I decide that maintaining the parser is too much, I can just swap it out for one written in python and I won't have to re-write anything.)
 
-* [ ] serialize individual data
-* [ ] first name prevalence
+* [X] serialize individual data
+* [X] first name prevalence
 * [ ] first name of partner vs parent
 * [ ] generation from 'start'
 * [ ] furthest back known female/male ancestor

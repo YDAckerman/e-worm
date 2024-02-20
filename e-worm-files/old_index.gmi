@@ -1,0 +1,23 @@
+=> https://e-worm.club/ < e-worm
+
+# Old Index
+
+> "In this living world / the body I give up and burn / would be wretched / if I thought of myself as / anything but firewood" - Ryonen Genso
+
+## Computer
+
+=> concurrency.gmi > Concurrency Notes
+=> yarr.html > Yarr Notes
+=> gedcrumb_chronicles.gmi > The Gedcrumb Chronicles
+=> keyboard.gmi > New Keyboard
+
+## Statements
+
+=> millenial.gmi > Millenial
+=> vanilla.gmi > Vanilla
+=> stink.gmi > Stink
+=> third_eye.gmi > Third Eye
+
+## Other
+
+=> granola.gmi > Granola
